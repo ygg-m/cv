@@ -37,16 +37,16 @@ export const contacts = {
     },
     {
       Name: "Instagram",
-      User: "ygg.js",
-      Link: "https://www.instagram.com/ygg.js/",
+      User: "ygglart",
+      Link: "https://www.instagram.com/ygglart/",
       Icon: InstagramIcon,
     },
-    {
-      Name: "Tiktok",
-      User: "ygg.js",
-      Link: "https://www.tiktok.com/@ygg.js",
-      Icon: TiktokIcon,
-    },
+    // {
+    //   Name: "Tiktok",
+    //   User: "ygg.js",
+    //   Link: "https://www.tiktok.com/@ygg.js",
+    //   Icon: TiktokIcon,
+    // },
     // {
     //   Name: "Twitter",
     //   User: "ygg.js",
