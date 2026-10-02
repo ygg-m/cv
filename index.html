@@ -1,374 +1,841 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ygor Goulart — QA &amp; Automation Engineer</title>
+    <meta
+      name="description"
+      content="CV of Ygor Goulart, QA &amp; Automation Engineer in São Paulo, Brazil — QA experience, skills and automation projects.">
+    <meta name="theme-color" content="#17181D" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#FAFAFA" media="(prefers-color-scheme: light)">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <script>
+      (function () {
+        var theme = null;
+        try {
+          theme = localStorage.getItem("theme");
+        } catch (e) {
+          /* localStorage unavailable */
+        }
+        if (theme !== "dark" && theme !== "light") {
+          theme =
+            window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches
+              ? "dark"
+              : "light";
+        }
+        document.documentElement.setAttribute("data-theme", theme);
+      })();
+    </script>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main" data-i18n="a11y.skip">Skip to main content</a>
 
-<head>
-    <!-- meta -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- social media -->
-    <meta property="og:title" content="Ygor Goulart">
-    <meta property="og:type" content="website" />
-    <meta property="og:description" content="Designer & Developer who's good at drawing something and make it work.">
-    <meta property="og:image" content="images/thumbnail.jpg">
-    <meta property="og:url" content="https://ygglart.github.io/cv/">
-    <meta name="twitter:card" content="summary_large_image">
-
-    <!-- page title -->
-    <title>Ygor Goulart, Designer & Developer</title>
-
-    <!-- css :: main --> <link rel="stylesheet" href="styles/main.css">
-    <!-- css :: navbar  --> <link rel="stylesheet" href="styles/navbar.css">
-    <!-- css :: header --> <link rel="stylesheet" href="styles/header.css">
-    <!-- css :: profile --> <link rel="stylesheet" href="styles/profile.css">
-    <!-- css :: career --> <link rel="stylesheet" href="styles/career.css">
-    <!-- css :: education --> <link rel="stylesheet" href="styles/education.css">
-    <!-- css :: pojects --> <link rel="stylesheet" href="styles/projects.css">
-    <!-- css :: footer --> <link rel="stylesheet" href="styles/footer.css">
-
-    <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="images/favicon/site.webmanifest">
-
-    <!-- google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-
-    <!-- font awesome -->
-    <script src="https://kit.fontawesome.com/64de45cbba.js" crossorigin="anonymous"></script>
-
-    <!-- ionicon -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>         
-
-</head>
-
-<body>
-    <!-- navbar :: start-->
-    <nav class="navbar">
-        <span class="main-logo"><a href="#">YG</a></span>
-
-        <div class="nav-links">
-                 <a href="#profile">profile</a>
-                <a href="#career">experiences</a>
-                <a href="#projects">projects</a>
-                <a href="#contact">contact</a>
-                <a href="https://drive.google.com/file/d/1RzGSDxmu0zRS069QGN96Ian1QmeWG0dC/view?usp=share_link" class="resume">resume</a>
-        </div>
-
-        <div class="menu-icon" onclick="responsiveMenu()"><i class="fa-solid fa-bars"></i></div>
-    </nav>
-    <!-- navbar :: end -->
-
-    <!-- header :: start -->
-    <section id="header">
-        <div class="header">
-            <h3>hi! i'm</h3>
-            <h1>ygor<span>goulart</span></h1>
-            <hr>
-            <h3>Designer & Developer</h3>
-            <a href="#projects">see my projects</a>
-        </div>
-    </section>
-    <!-- header :: end -->
-
-    <!-- profile :: start -->
-    <section id="profile">
-        <div class="profile">
-            <!-- info -->
-            <div class="info-container">
-                <div class="info">
-                    <div class="title fw-300">
-                        <p>name</p>
-                        <p>age</p>
-                        <p>location</p>
-                    </div>
-                    <div class="content">
-                        <p class="clr-primary">ygor goulart</p>
-                        <p>26 years</p>
-                        <p>são paulo, brazil</p>
-                    </div>
-                </div>
-
-                <!-- quote -->
-                <div class="quote">
-                    <p>"<span class="clr-primary fw-600">Designer</span> by heart, <span
-                            class="clr-primary fw-600">Developer</span> by choice."</p>
-                </div>
-
-                <!-- skills -->
-                <div class="skill-big-container">
-
-                    <div class="skill-container">
-                        <ion-icon name="brush-outline" class="skill-icon"></ion-icon></i>
-                        <div class="skills">
-                            <span class="skill">ui/ux</span>
-                            <span class="skill">design system</span>
-                            <span class="skill">web design</span>
-                            <span class="skill">mobile design</span>
-                            <span class="skill">wireframing</span>
-                            <span class="skill">prototyping</span>
-                            <span class="skill">testing</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-container">
-                        <ion-icon name="code-slash-outline" class="skill-icon"></ion-icon></i>
-                        <div class="skills">
-                            <span class="skill">html</span>
-                            <span class="skill">css</span>
-                            <span class="skill">javascript</span>
-                            <span class="skill">jquery</span>
-                            <span class="skill">bootstrap</span>
-                            <span class="skill">node</span>
-                            <span class="skill">web3</span>
-                            <span class="skill">react</span>
-                        </div>
-                    </div>
-
-                </div>
+    <header class="site-header">
+      <nav class="navbar container" aria-label="Main navigation" data-i18n-aria="nav.mainLabel">
+        <a class="logo" href="#Hero" aria-label="Ygor Goulart — home">YG</a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+          aria-label="Toggle navigation menu"
+          data-i18n-aria="nav.menuLabel"
+        >
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M3 6h18M3 12h18M3 18h18" />
+          </svg>
+        </button>
+        <div class="nav-menu" id="nav-menu">
+          <ul class="nav-links">
+            <li><a href="#Profile" data-i18n="nav.profile">Profile</a></li>
+            <li><a href="#Skills" data-i18n="nav.skills">Skills</a></li>
+            <li><a href="#Experience" data-i18n="nav.experience">Experience</a></li>
+            <li><a href="#Projects" data-i18n="nav.projects">Projects</a></li>
+            <li><a href="#Education" data-i18n="nav.education">Education</a></li>
+            <li><a href="#Contact" data-i18n="nav.contact">Contact</a></li>
+          </ul>
+          <div class="nav-actions">
+            <div
+              class="lang-switch"
+              role="group"
+              aria-label="Change language"
+              data-i18n-aria="lang.groupLabel"
+            >
+              <button class="lang-btn" type="button" data-lang="en" aria-pressed="true">EN</button>
+              <button class="lang-btn" type="button" data-lang="pt" aria-pressed="false">PT</button>
             </div>
-
-
-            <!-- image -->
-            <div class="image">
-            </div>
+            <button
+              class="theme-toggle"
+              type="button"
+              aria-label="Switch to light theme"
+              data-i18n-aria="theme.toLight"
+            >
+              <svg
+                class="icon icon-sun"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <circle cx="12" cy="12" r="4" />
+                <path
+                  d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"
+                />
+              </svg>
+              <svg
+                class="icon icon-moon"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+              </svg>
+            </button>
+            <a
+              class="btn btn-outline btn-sm"
+              href="https://drive.google.com/file/d/1Xzh1LSBM64ZnpV27amtfwdE3Ylkr3w-9/view?usp=share_link"
+              target="_blank"
+              rel="noopener"
+              data-i18n="nav.resume"
+              >Resume</a
+            >
+          </div>
         </div>
-    </section>
-    <!-- profile :: end -->
+      </nav>
+    </header>
 
+    <main id="main">
+      <section class="hero section" id="Hero">
+        <div class="container hero-inner">
+          <p class="eyebrow" data-i18n="hero.eyebrow">Senior QA Tester · São Paulo, Brazil</p>
+          <h1>Ygor Goulart</h1>
+          <p class="hero-role" data-i18n="hero.role">QA &amp; Automation Engineer</p>
+          <p class="hero-tagline" data-i18n="hero.tagline">Find the bug before the player does.</p>
+          <p class="hero-sub" data-i18n="hero.sub">
+            I test AAA titles across PC and console — exploratory, smoke and regression — and I am
+            building my automation stack with Playwright, Cypress and Selenium.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#Projects" data-i18n="hero.ctaPrimary"
+              >See my QA work</a
+            >
+            <a class="btn btn-ghost" href="#Contact" data-i18n="hero.ctaSecondary">Contact me</a>
+          </div>
+        </div>
+      </section>
 
-
-    <!-- career :: start -->
-    <section id="career">
+      <section class="section" id="Profile">
         <div class="container">
-            <!-- title -->
-            <h2>career</h2>
-
-            <!-- jobs container -->
-            <div class="info-box-container">
-
-
-                <div class="info-box">
-                    <div class="img-info"><img src="images/career/freelance.png" alt="">
-                        <div class="info-box-description">
-                            <p class="clr-primary fw-600 ltr-space-2">freelance</p>
-                            <p>designer & developer</p>
-                            <p class="opacity-5">10+ years</p>
-                        </div>
-                    </div>
-                    <ion-icon name="menu-outline"></ion-icon>
-                    <div class="info-box-more">
-                        <p>When I have time, I like to take some freelance job as a Designer. I have experiences developing websites, apps, marketing pieces, vector illustrations, printables and product design.</p>
-                        <a class="btn-off" href="#contact">not available</a>
-                    </div>
+          <h2 data-i18n="profile.title">Profile</h2>
+          <div class="profile-grid">
+            <img class="profile-pic" src="assets/profile.jpg" alt="Ygor Goulart">
+            <div class="profile-body">
+              <p data-i18n="profile.bio">
+                I am a QA Engineer focused on software people can trust. Day to day I hunt defects
+                in AAA games, write reports developers actually enjoy reading, and verify fixes
+                across platforms and certification standards. Before QA I worked as a web developer
+                and a design lead — that product eye still shapes how I test.
+              </p>
+              <dl class="facts">
+                <div class="fact">
+                  <dt data-i18n="profile.ageLabel">Age</dt>
+                  <dd><span id="age">31</span> <span data-i18n="profile.yearsOld">years old</span></dd>
                 </div>
-
-                <div class="info-box">
-                    <!-- job image -->
-                    <div class="img-info"><img src="images/career/finby.jpg" alt="">
-                        <!-- job info -->
-                        <div class="info-box-description">
-                            <p class="clr-primary fw-600 ltr-space-2">finby</p>
-                            <p>ui/ux designer</p>
-                            <p class="opacity-5">2 months</p>
-                        </div>
-                    </div>
-                    <!-- burger icon -->
-                    <ion-icon name="menu-outline"></ion-icon>
-                    <!-- info pop-up -->
-                    <div class="info-box-more">
-                        <p>Concept design, wireframe and prototype of Finby internal and external websites. Support to Marketing Team with marketing pieces, presentations and overral design tips.</p>
-                        <a class="btn-primary" href="https://finby.io/">website</a>
-                    </div>
+                <div class="fact">
+                  <dt data-i18n="profile.locationLabel">Based in</dt>
+                  <dd data-i18n="profile.location">São Paulo, Brazil</dd>
                 </div>
-
-                <div class="info-box">
-                    <div class="img-info"><img src="images/career/ideamaker.jpg" alt="">
-                        <div class="info-box-description">
-                            <p class="clr-primary fw-600 ltr-space-2">idea maker</p>
-                            <p>lead designer</p>
-                            <p class="opacity-5">2 years</p>
-                        </div>
-                    </div>
-                    <ion-icon name="menu-outline"></ion-icon>
-                    <div class="info-box-more">
-                        <p>Lead a 5 people team of designers. Created concepts, wireframes, mockups, presentations, created websites and apps like ideamaker.com and Apcap da Sorte.</p>
-                        <a class="btn-primary" href="https://ideamaker.com.br/">website</a>
-                    </div>
-                </div>
-
+              </dl>
             </div>
+          </div>
         </div>
-    </section>
-    <!-- career :: end -->
+      </section>
 
-    <!-- education :: start -->
-    <section id="education">
-        <h2>education</h2>
-
-        <!-- degrees -->
-        <div class="info-box-container college">
-            <div class="info-box">
-                <div class="img-info">
-                    <img src="images/education/anhembimorumbi.jpg" alt="">
-                    <div class="info-box-description">
-                        <p>anhembi morumbi</p>
-                        <p class="clr-primary fw-600 ltr-space-2">system analysis & development</p>
-                        <p class="opacity-5">2023</p>
-                    </div>
-                </div>
+      <section class="section" id="Skills">
+        <div class="container">
+          <h2 data-i18n="skills.title">Skills</h2>
+          <div class="skill-groups">
+            <div class="skill-group">
+              <h3 data-i18n="skills.qa">Quality Assurance</h3>
+              <ul class="badges">
+                <li>Jira</li>
+                <li>TestRail</li>
+                <li data-i18n="skills.badge.testDesign">Test Design</li>
+                <li data-i18n="skills.badge.exploratory">Exploratory Testing</li>
+                <li data-i18n="skills.badge.regression">Regression Testing</li>
+                <li data-i18n="skills.badge.smoke">Smoke Testing</li>
+                <li data-i18n="skills.badge.certification">Certification Testing</li>
+              </ul>
             </div>
-
-                <div class="info-box">
-                    <div class="img-info">
-                        <img src="images/education/anhembimorumbi.jpg" alt="">
-                        <div class="info-box-description">
-                            <p>anhembi morumbi</p>
-                            <p class="clr-primary fw-600 ltr-space-2">graphic design</p>
-                            <p class="opacity-5">2017</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="skill-group">
+              <h3 data-i18n="skills.automation">Automation &amp; Tooling</h3>
+              <ul class="badges">
+                <li>Playwright</li>
+                <li>Cypress</li>
+                <li>Selenium</li>
+                <li>Postman</li>
+                <li>SQL</li>
+                <li>JQL</li>
+              </ul>
             </div>
-
-        <!-- courses -->
-        <div class="info-box-container course">
-
-            <div class="info-box course">
-                <div class="img-info"><img src="images/education/udemy.jpg" alt="">
-                    <div class="info-box-description">
-                        <p class="clr-light ltr-space-2">udemy</p>
-                    </div>
-                </div>
-                <div class="info-box-more">
-                    <ul>
-                        <li>html5/css3 <span class="date">2020 <i class="fa-solid fa-check"></i></span></li>
-                        <li>javascript <span class="date">2021 <i class="fa-solid fa-check"></i></span></li>
-                        <li>bootstrap <span class="date">2022 <i class="fa-solid fa-check"></i></span></li>
-                        <li>jquery <span class="date">2022 <i class="fa-solid fa-check"></i></span></li>
-                        <li>node.js <span class="date">2022 <i class="fa-solid fa-check"></i></span></li>
-                        <li>react <span class="date">2022 <i class="fa-solid fa-check"></i></span></li>
-                    </ul>
-                </div>
+            <div class="skill-group">
+              <h3 data-i18n="skills.dev">Development</h3>
+              <ul class="badges badges-muted">
+                <li>TypeScript</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Angular</li>
+                <li>Vue</li>
+                <li>Node.js</li>
+                <li>Jest</li>
+                <li>Git</li>
+                <li>GitHub</li>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Tailwind CSS</li>
+              </ul>
             </div>
-
-            <div class="info-box course">
-                <div class="img-info"><img src="images/education/cursoemvideo.png" alt="">
-                    <div class="info-box-description">
-                        <p class="clr-light ltr-space-2">curso em video</p>
-                    </div>
-                </div>
-                <div class="info-box-more">
-                    <ul>
-                        <li>html5/css3 <span class="date">2019 <i class="fa-solid fa-check"></i></span></li>
-                        <li>javascript <span class="date">2020 <i class="fa-solid fa-check"></i></span></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="info-box course">
-                <div class="img-info"><img src="images/education/scrimba.png" alt="">
-                    <div class="info-box-description">
-                        <p class="clr-light ltr-space-2">scrimba</p>
-                    </div>
-                </div>
-                <div class="info-box-more">
-                    <ul>
-                        <li>html5/css3 <span class="date">2020 <i class="fa-solid fa-check"></i></span></li>
-                        <li>javascript <span class="date">2021 <i class="fa-solid fa-check"></i></span></li>
-                        <li>clean code <span class="date">2021 <i class="fa-solid fa-check"></i></span></li>
-                    </ul>
-                </div>
-            </div>
-
+            <p class="design-note" data-i18n="skills.designNote">
+              Design roots: UI/UX, design systems, wireframing, Figma and Adobe — former Lead
+              Designer (2020–2022). One chapter of the story, not the headline.
+            </p>
+          </div>
         </div>
-    </section>
-    <!-- education :: end -->
+      </section>
 
-    <!-- project :: start -->
-    <section id="projects">
-        <div class="flex col">
-            <h2>projects</h2>
+      <section class="section" id="Experience">
+        <div class="container">
+          <h2 data-i18n="experience.title">Experience</h2>
+          <div class="career-list">
+            <article class="career-item">
+              <img class="career-logo" src="assets/career/side.jpg" alt="">
+              <div class="career-content">
+                <header class="career-head">
+                  <div>
+                    <h3>Senior QA Tester</h3>
+                    <p class="career-place">SIDE</p>
+                  </div>
+                  <p class="career-dates" data-i18n="career.side.dates">Dec 2025 – Today</p>
+                </header>
+                <ul class="career-bullets">
+                  <li data-i18n="career.side.b1">
+                    Test multiple AAA titles across PC, Steam, PlayStation, Xbox, and Nintendo
+                    Switch 2.
+                  </li>
+                  <li data-i18n="career.side.b2">
+                    Use Jira and TestRail to document, track, and manage defects through the full
+                    lifecycle.
+                  </li>
+                  <li data-i18n="career.side.b3">
+                    Execute exploratory, smoke, and regression tests to validate stability and
+                    functionality.
+                  </li>
+                  <li data-i18n="career.side.b4">
+                    Identify game-breaking bugs, reproduction steps, and platform-specific issues
+                    under certification standards.
+                  </li>
+                  <li data-i18n="career.side.b5">
+                    Collaborate with dev/QA teams to verify fixes and ensure a seamless player
+                    experience across hardware.
+                  </li>
+                </ul>
+              </div>
+            </article>
 
-            <div class="projects flex wrap gap-1 j-space-around">
+            <article class="career-item">
+              <img class="career-logo" src="assets/career/acs-pro.jpg" alt="">
+              <div class="career-content">
+                <header class="career-head">
+                  <div>
+                    <h3>IT Support Analyst</h3>
+                    <p class="career-place">ACS Pro</p>
+                  </div>
+                  <p class="career-dates" data-i18n="career.acspro.dates">Jan 2025 – Jul 2025</p>
+                </header>
+                <ul class="career-bullets">
+                  <li data-i18n="career.acspro.b1">
+                    Administer ManageEngine CRM tools, including configuration, custom workflows,
+                    and module customization.
+                  </li>
+                  <li data-i18n="career.acspro.b2">
+                    Provide Tier 1/Tier 2 support, troubleshooting synchronization, data, API, and
+                    performance issues.
+                  </li>
+                  <li data-i18n="career.acspro.b3">
+                    Manage users, roles, and access controls; perform database maintenance and
+                    system health checks.
+                  </li>
+                  <li data-i18n="career.acspro.b4">
+                    Create technical documentation, user guides, and training to improve CRM
+                    adoption.
+                  </li>
+                  <li data-i18n="career.acspro.b5">
+                    Translate business needs into CRM solutions and collaborate with teams to ensure
+                    system efficiency.
+                  </li>
+                </ul>
+              </div>
+            </article>
 
-                <div class="project">
-                    <img src="images/projects/game-on.jpg" alt="">
-                    <div class="cover-info flex col">
-                        <ion-icon class="main-icon" name="game-controller-outline"></ion-icon>
-                        <h4>Game-On</h4>
-                        <a class="btn-primary" href="https://www.behance.net/gallery/140523247/Game-On-Project">see it on behance <ion-icon name="logo-behance"></ion-icon> </a>
-                        <a class="btn-primary" href="https://github.com/YggLart/game-on">see it on github <ion-icon name="logo-github"></ion-icon> </a>
-                        <p>Mockup App made with Figma. Website made using Boostrap.</p>
-                        <div class="skills">
-                            <span class="skill">figma</span>
-                            <span class="skill">html</span>
-                            <span class="skill">css</span>
-                            <span class="skill">bootstrap</span>
-                        </div>
+            <article class="career-item">
+              <img class="career-logo" src="assets/career/acsoftware.jpg" alt="">
+              <div class="career-content">
+                <header class="career-head">
+                  <div>
+                    <h3>BI Agent</h3>
+                    <p class="career-place">ACSoftware</p>
+                  </div>
+                  <p class="career-dates" data-i18n="career.acsoftware.dates">Jun 2024 – Jan 2025</p>
+                </header>
+                <ul class="career-bullets">
+                  <li data-i18n="career.acsoftware.b1">
+                    Transitioned from Customer Support to BI, using product and customer knowledge
+                    to drive data-informed decisions.
+                  </li>
+                  <li data-i18n="career.acsoftware.b2">
+                    Bridge development teams and stakeholders by translating complex technical data
+                    into actionable business insights.
+                  </li>
+                  <li data-i18n="career.acsoftware.b3">
+                    Analyze and monitor KPIs for IT management software; build executive dashboards
+                    on usage, satisfaction, and market trends.
+                  </li>
+                  <li data-i18n="career.acsoftware.b4">
+                    Identify customer behavior and usage patterns to inform product priorities;
+                    report on adoption and feature utilization.
+                  </li>
+                  <li data-i18n="career.acsoftware.b5">
+                    Partner with development on data collection strategies and support sales with
+                    data-backed prospect insights.
+                  </li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="career-item">
+              <img class="career-logo" src="assets/career/concentrix.jpg" alt="">
+              <div class="career-content">
+                <header class="career-head">
+                  <div>
+                    <h3>IT Analyst</h3>
+                    <p class="career-place">Concentrix</p>
+                  </div>
+                  <p class="career-dates" data-i18n="career.concentrix.dates">Feb 2023 – Feb 2024</p>
+                </header>
+                <ul class="career-bullets">
+                  <li data-i18n="career.concentrix.b1">
+                    Used Jira and other tools to plan, track, and prioritize IT tasks efficiently.
+                  </li>
+                  <li data-i18n="career.concentrix.b2">
+                    Coordinated with cross-functional teams to streamline workflows and ensure
+                    timely delivery.
+                  </li>
+                  <li data-i18n="career.concentrix.b3">
+                    Monitored task progress, dependencies, and blockers to maintain operational
+                    efficiency.
+                  </li>
+                  <li data-i18n="career.concentrix.b4">
+                    Leveraged technology to improve collaboration, visibility, and project
+                    outcomes.
+                  </li>
+                  <li data-i18n="career.concentrix.b5">
+                    Aligned tool usage with team goals to support operational success and delivery.
+                  </li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="career-item">
+              <img class="career-logo" src="assets/career/pak.jpeg" alt="">
+              <div class="career-content">
+                <header class="career-head">
+                  <div>
+                    <h3>Web Developer</h3>
+                    <p class="career-place">Planned Acts of Kindness</p>
+                  </div>
+                  <p class="career-dates" data-i18n="career.pak.dates">Nov 2022 – Feb 2024</p>
+                </header>
+                <ul class="career-bullets">
+                  <li data-i18n="career.pak.b1">
+                    Developed WordPress pages to expand the organization's global reach.
+                  </li>
+                  <li data-i18n="career.pak.b2">
+                    Created user-friendly, engaging pages that conveyed its mission and worldwide
+                    acts of kindness.
+                  </li>
+                  <li data-i18n="career.pak.b3">
+                    Used these pages to spread awareness, garner support, and build community around
+                    the cause.
+                  </li>
+                  <li data-i18n="career.pak.b4">
+                    Leveraged web development skills to amplify a benevolence-focused
+                    organization's impact.
+                  </li>
+                  <li data-i18n="career.pak.b5">
+                    Delivered accessible content that showcased transformative initiatives and
+                    inspired engagement.
+                  </li>
+                </ul>
+              </div>
+            </article>
+
+            <div class="more-group" id="career-more" hidden>
+              <article class="career-item">
+                <img class="career-logo" src="assets/career/ideamaker.jpg" alt="">
+                <div class="career-content">
+                  <header class="career-head">
+                    <div>
+                      <h3>Lead Designer</h3>
+                      <p class="career-place">Idea Maker</p>
                     </div>
+                    <p class="career-dates" data-i18n="career.ideamaker.dates">
+                      Mar 2020 – Oct 2022
+                    </p>
+                  </header>
+                  <ul class="career-bullets">
+                    <li data-i18n="career.ideamaker.b1">
+                      Consolidated a new company identity that improved external perception with
+                      clients.
+                    </li>
+                    <li data-i18n="career.ideamaker.b2">
+                      Designed mobile applications reaching 10k+ weekly views and 2M+ downloads.
+                    </li>
+                    <li data-i18n="career.ideamaker.b3">
+                      Led a team of 4 responsible for all company media.
+                    </li>
+                    <li data-i18n="career.ideamaker.b4">
+                      Increased client partnerships through cohesive media and brand execution.
+                    </li>
+                    <li data-i18n="career.ideamaker.b5">
+                      Expanded products into new clients/markets through design leadership.
+                    </li>
+                  </ul>
                 </div>
+              </article>
 
-                <div class="project">
-                    <img src="images/projects/spacetravel.jpg" alt="">
-                    <div class="cover-info flex col">
-                        <ion-icon class="main-icon" name="rocket-outline"></ion-icon>
-                        <h4>Space Travel</h4>
-                        <a class="btn-primary" href="https://github.com/YggLart/spacetravel">see it on github <ion-icon name="logo-github"></ion-icon> </a>
-                        <p>Challenge project from Frontend Mentor.</p>
-                        <div class="skills">
-                            <span class="skill">html</span>
-                            <span class="skill">css</span>
-                            <span class="skill">javascript</span>
-                        </div>
+              <article class="career-item">
+                <img class="career-logo" src="assets/career/liq.png" alt="">
+                <div class="career-content">
+                  <header class="career-head">
+                    <div>
+                      <h3>Bilingual Tech Support</h3>
+                      <p class="career-place">LIQ</p>
                     </div>
+                    <p class="career-dates" data-i18n="career.liq.dates">Mar 2017 – Nov 2019</p>
+                  </header>
+                  <ul class="career-bullets">
+                    <li data-i18n="career.liq.b1">
+                      Provided top-notch bilingual technical support in English and Portuguese.
+                    </li>
+                    <li data-i18n="career.liq.b2">
+                      Resolved technical issues and assisted users with operating systems,
+                      productivity apps, and hardware.
+                    </li>
+                    <li data-i18n="career.liq.b3">
+                      Used incident management tools to ensure fast, accurate support.
+                    </li>
+                    <li data-i18n="career.liq.b4">
+                      Delivered user training, how-to documentation, and support project
+                      management.
+                    </li>
+                    <li data-i18n="career.liq.b5">
+                      Built positive user relationships and collaborated with analysts to provide
+                      exceptional service.
+                    </li>
+                  </ul>
                 </div>
-
-                <div class="project">
-                    <img src="images/projects/poringclicker.jpg" alt="">
-                    <div class="cover-info flex col">
-                        <ion-icon class="main-icon" name="dice-outline"></ion-icon>
-                        <h4>Poring Clicker</h4>
-                        <a class="btn-primary" href="https://www.behance.net/gallery/142025411/Poring-Clicker">see it on behance <ion-icon name="logo-behance"></ion-icon> </a>
-                        <a class="btn-primary" href="https://ygglart.github.io/poring-clicker/">see it on github <ion-icon name="logo-github"></ion-icon> </a>
-                        <p>Clicker Game made using Javascript. Based no Ragnarök Online.</p>
-                        <div class="skills">
-                            <span class="skill">figma</span>
-                            <span class="skill">html</span>
-                            <span class="skill">css</span>
-                            <span class="skill">javascript</span>
-                        </div>
-                    </div>
-                </div>
-
+              </article>
             </div>
+          </div>
+          <button
+            class="btn btn-ghost more-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="career-more"
+            data-i18n="more.show"
+          >
+            Show more
+          </button>
         </div>
-    </section>
-    <!-- project :: end -->
-    
-    <!-- footer :: start -->
-    <section id="contact">
-            <div class="flex col">
-                <a class="mail uppercase" href="mailto:ygorgm95@gmail.com"><span class="fw-700">ygorgm95</span>@gmail.com</a>
-                <a class="phone" href="https://api.whatsapp.com/send?phone=5511952831030"><ion-icon name="logo-whatsapp"></ion-icon> +55 (11) <span class="fw-700">9 5283 1030</span></a>
+      </section>
+
+      <section class="section" id="Projects">
+        <div class="container">
+          <h2 data-i18n="projects.title">Projects</h2>
+
+          <div class="project-block">
+            <h3 data-i18n="projects.qaTitle">QA &amp; Automation</h3>
+            <div class="project-grid">
+              <article class="project-card">
+                <div class="project-card-body">
+                  <h4 data-i18n="projects.cvSuite.name">This Site — CI &amp; Test Suite</h4>
+                  <p data-i18n="projects.cvSuite.desc">
+                    My CV tests itself: Playwright smoke tests for i18n, theming and navigation,
+                    axe accessibility scans, HTML validation and link checks — all running in
+                    GitHub Actions on every push.
+                  </p>
+                  <ul class="badges badges-sm">
+                    <li>Playwright</li>
+                    <li>axe-core</li>
+                    <li>html-validate</li>
+                    <li>GitHub Actions</li>
+                  </ul>
+                  <p class="project-links">
+                    <a
+                      href="https://github.com/ygg-m/cv"
+                      target="_blank"
+                      rel="noopener"
+                      data-i18n="projects.sourceCode"
+                      >Source code</a
+                    >
+                  </p>
+                </div>
+              </article>
             </div>
-            <a class="main-logo uppercase" href="#">yg</a>
-            <div class="flex row j-center">
-                <a class="social" href="https://github.com/YggLart"><ion-icon name="logo-github"></ion-icon></a>
-                <a class="social" href="https://www.instagram.com/ygg.art_/"><ion-icon name="logo-instagram"></ion-icon></a>
-                <a class="social" href="https://www.linkedin.com/in/ygorgm/"><ion-icon name="logo-linkedin"></ion-icon></a>
+            <p class="note" data-i18n="projects.moreSoon">
+              More automation projects are coming — this pipeline is the first seed of my QA
+              portfolio.
+            </p>
+          </div>
+
+          <div class="project-block">
+            <h3 data-i18n="projects.devTitle">Development</h3>
+            <div class="project-grid more-group" id="dev-projects" hidden>
+              <article class="project-card">
+                <img src="assets/projects/angular-todo.png" alt="">
+                <div class="project-card-body">
+                  <h4>Angular To-Do w/ Authentication</h4>
+                  <p data-i18n="projects.angularTodo.desc">
+                    Todo app with authentication using Angular 17 and Firebase.
+                  </p>
+                  <ul class="badges badges-sm">
+                    <li>Angular</li>
+                    <li>TypeScript</li>
+                    <li>Firebase</li>
+                    <li>Tailwind CSS</li>
+                  </ul>
+                  <p class="project-links">
+                    <a
+                      href="https://ygg-todo.web.app/"
+                      target="_blank"
+                      rel="noopener"
+                      data-i18n="projects.viewLive"
+                      >Live demo</a
+                    >
+                    <a
+                      href="https://github.com/ygg-m/angular-todo"
+                      target="_blank"
+                      rel="noopener"
+                      data-i18n="projects.sourceCode"
+                      >Source code</a
+                    >
+                  </p>
+                </div>
+              </article>
+
+              <article class="project-card">
+                <img src="assets/projects/fginputtranslator.png" alt="">
+                <div class="project-card-body">
+                  <h4>Fight Game Input Translator</h4>
+                  <p data-i18n="projects.fgInput.desc">
+                    App that converts numeral inputs into visual inputs.
+                  </p>
+                  <ul class="badges badges-sm">
+                    <li>React</li>
+                    <li>JavaScript</li>
+                    <li>Tailwind CSS</li>
+                    <li>React Router</li>
+                  </ul>
+                  <p class="project-links">
+                    <a
+                      href="https://ygg-m.github.io/fg-input-translator/"
+                      target="_blank"
+                      rel="noopener"
+                      data-i18n="projects.viewLive"
+                      >Live demo</a
+                    >
+                    <a
+                      href="https://github.com/ygg-m/fg-input-translator"
+                      target="_blank"
+                      rel="noopener"
+                      data-i18n="projects.sourceCode"
+                      >Source code</a
+                    >
+                  </p>
+                </div>
+              </article>
+
+              <article class="project-card">
+                <img src="assets/projects/jspokedex.png" alt="">
+                <div class="project-card-body">
+                  <h4>Pokédex</h4>
+                  <p data-i18n="projects.pokedex.desc">
+                    Dynamic Pokédex built on top of PokéAPI.
+                  </p>
+                  <ul class="badges badges-sm">
+                    <li>JavaScript</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                  </ul>
+                  <p class="project-links">
+                    <a
+                      href="https://ygg-m.github.io/js-pokedex/"
+                      target="_blank"
+                      rel="noopener"
+                      data-i18n="projects.viewLive"
+                      >Live demo</a
+                    >
+                    <a
+                      href="https://github.com/ygg-m/js-pokedex"
+                      target="_blank"
+                      rel="noopener"
+                      data-i18n="projects.sourceCode"
+                      >Source code</a
+                    >
+                  </p>
+                </div>
+              </article>
+
+              <article class="project-card">
+                <img src="assets/projects/todo.png" alt="">
+                <div class="project-card-body">
+                  <h4>To-Do App</h4>
+                  <p data-i18n="projects.todo.desc">
+                    Simple to-do app to track your goals.
+                  </p>
+                  <ul class="badges badges-sm">
+                    <li>JavaScript</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                  </ul>
+                  <p class="project-links">
+                    <a
+                      href="https://ygg-m.github.io/to-do-app/"
+                      target="_blank"
+                      rel="noopener"
+                      data-i18n="projects.viewLive"
+                      >Live demo</a
+                    >
+                    <a
+                      href="https://github.com/ygg-m/to-do-app"
+                      target="_blank"
+                      rel="noopener"
+                      data-i18n="projects.sourceCode"
+                      >Source code</a
+                    >
+                  </p>
+                </div>
+              </article>
+
+              <article class="project-card">
+                <img src="assets/projects/angularblog.png" alt="">
+                <div class="project-card-body">
+                  <h4>Angular Blog</h4>
+                  <p data-i18n="projects.angularBlog.desc">
+                    Fun project built in Angular to learn more about the framework.
+                  </p>
+                  <ul class="badges badges-sm">
+                    <li>Angular</li>
+                    <li>TypeScript</li>
+                  </ul>
+                  <p class="project-links">
+                    <a
+                      href="https://ygg-m.github.io/angular-blog/"
+                      target="_blank"
+                      rel="noopener"
+                      data-i18n="projects.viewLive"
+                      >Live demo</a
+                    >
+                    <a
+                      href="https://github.com/ygg-m/angular-blog"
+                      target="_blank"
+                      rel="noopener"
+                      data-i18n="projects.sourceCode"
+                      >Source code</a
+                    >
+                  </p>
+                </div>
+              </article>
+
+              <article class="project-card">
+                <img src="assets/projects/angularbuzzfeed.png" alt="">
+                <div class="project-card-body">
+                  <h4>Angular Buzzfeed</h4>
+                  <p data-i18n="projects.angularBuzzfeed.desc">
+                    Fun project built in Angular to learn more about the framework.
+                  </p>
+                  <ul class="badges badges-sm">
+                    <li>Angular</li>
+                    <li>TypeScript</li>
+                  </ul>
+                  <p class="project-links">
+                    <a
+                      href="https://angular-buzzfeed.netlify.app/"
+                      target="_blank"
+                      rel="noopener"
+                      data-i18n="projects.viewLive"
+                      >Live demo</a
+                    >
+                    <a
+                      href="https://github.com/ygg-m/angular-buzzfeed"
+                      target="_blank"
+                      rel="noopener"
+                      data-i18n="projects.sourceCode"
+                      >Source code</a
+                    >
+                  </p>
+                </div>
+              </article>
             </div>
-    </section>
+            <button
+              class="btn btn-ghost more-toggle"
+              type="button"
+              aria-expanded="false"
+              aria-controls="dev-projects"
+              data-i18n="more.show"
+            >
+              Show more
+            </button>
+          </div>
+        </div>
+      </section>
 
-    <!-- footer :: end -->
+      <section class="section" id="Education">
+        <div class="container">
+          <h2 data-i18n="edu.title">Education</h2>
+          <div class="edu-list">
+            <article class="edu-item">
+              <img class="edu-logo" src="assets/education/anhembimorumbi.jpg" alt="">
+              <div>
+                <h3 data-i18n="edu.systems.course">Analysis and Systems Development</h3>
+                <p class="edu-place" data-i18n="edu.systems.place">Anhembi Morumbi University</p>
+                <p class="edu-dates" data-i18n="edu.systems.dates">
+                  Jun 2024 – Dec 2026 · In progress
+                </p>
+              </div>
+            </article>
+            <div class="more-group" id="edu-more" hidden>
+              <article class="edu-item">
+                <img class="edu-logo" src="assets/education/anhembimorumbi.jpg" alt="">
+                <div>
+                  <h3 data-i18n="edu.design.course">Design</h3>
+                  <p class="edu-place" data-i18n="edu.design.place">Anhembi Morumbi University</p>
+                  <p class="edu-dates" data-i18n="edu.design.dates">Feb 2014 – Dec 2018</p>
+                </div>
+              </article>
+            </div>
+            <button
+              class="btn btn-ghost more-toggle"
+              type="button"
+              aria-expanded="false"
+              aria-controls="edu-more"
+              data-i18n="more.show"
+            >
+              Show more
+            </button>
+          </div>
 
-    <script src="main.js"></script>
+          <h3 class="courses-title" data-i18n="edu.coursesTitle">Courses</h3>
+          <div class="course-grid">
+            <article class="course-item">
+              <img src="assets/education/selftaught.jpg" alt="">
+              <div>
+                <h4>Self Taught</h4>
+                <p>TypeScript · Node.js · Tailwind CSS · Git · GitHub</p>
+              </div>
+            </article>
+            <article class="course-item">
+              <img src="assets/education/udemy.jpg" alt="">
+              <div>
+                <h4>Udemy</h4>
+                <p>HTML5 / CSS3 · JavaScript · Node.JS · React</p>
+              </div>
+            </article>
+            <article class="course-item">
+              <img src="assets/education/cursoemvideo.png" alt="">
+              <div>
+                <h4>Curso em Vídeo</h4>
+                <p>HTML5 / CSS3 · JavaScript</p>
+              </div>
+            </article>
+            <article class="course-item">
+              <img src="assets/education/scrimba.png" alt="">
+              <div>
+                <h4>Scrimba</h4>
+                <p>Clean Code</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
 
-</body>
+      <section class="section" id="Contact">
+        <div class="container">
+          <h2 data-i18n="contact.title">Contact</h2>
+          <p data-i18n="contact.intro">
+            Want to talk QA, automation or a new opportunity? Reach me here:
+          </p>
+          <ul class="contact-list">
+            <li>
+              <img src="assets/ui/mail.svg" alt="" aria-hidden="true">
+              <a href="mailto:ygorgm95@gmail.com">ygorgm95@gmail.com</a>
+            </li>
+            <li>
+              <img src="assets/ui/phone.svg" alt="" aria-hidden="true">
+              <a
+                href="https://api.whatsapp.com/send?phone=5511952831030"
+                target="_blank"
+                rel="noopener"
+                >+55 11 95283 1030</a
+              >
+            </li>
+            <li>
+              <img src="assets/ui/github.svg" alt="" aria-hidden="true">
+              <a href="https://github.com/ygg-m" target="_blank" rel="noopener">ygg-m</a>
+            </li>
+            <li>
+              <img src="assets/ui/linkedin.svg" alt="" aria-hidden="true">
+              <a href="https://www.linkedin.com/in/ygorgm/" target="_blank" rel="noopener"
+                >ygorgm</a
+              >
+            </li>
+            <li>
+              <img src="assets/ui/instagram.svg" alt="" aria-hidden="true">
+              <a href="https://www.instagram.com/ygglart/" target="_blank" rel="noopener"
+                >ygglart</a
+              >
+            </li>
+          </ul>
+          <a
+            class="btn btn-primary"
+            href="https://drive.google.com/file/d/1Xzh1LSBM64ZnpV27amtfwdE3Ylkr3w-9/view?usp=share_link"
+            target="_blank"
+            rel="noopener"
+            data-i18n="contact.resume"
+            >Download resume</a
+          >
+        </div>
+      </section>
+    </main>
 
+    <footer class="site-footer">
+      <div class="container">
+        <p class="footer-brand">YG · <span data-i18n="footer.role">QA &amp; Automation Engineer</span></p>
+        <p>© <span id="year">2026</span> Ygor Goulart</p>
+        <p class="footer-note" data-i18n="footer.built">
+          Built with plain HTML, CSS and JavaScript — tested with Playwright and axe.
+        </p>
+      </div>
+    </footer>
+
+    <noscript>
+      <p class="noscript-note">
+        This site needs JavaScript for language and theme switching. The full CV content is in the
+        HTML.
+      </p>
+    </noscript>
+
+    <script type="module" src="js/main.js"></script>
+  </body>
 </html>
