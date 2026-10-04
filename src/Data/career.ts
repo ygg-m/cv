@@ -1,4 +1,4 @@
-const imgs = {
+const img = {
   Concentrix: "../Assets/career/concentrix.jpg",
   ACSoftware: "../Assets/career/acsoftware.jpg",
   ACSPro: "../Assets/career/acs-pro.jpg",
@@ -9,7 +9,7 @@ const imgs = {
 };
 
 export const career = [
-    {
+  {
     Place: "SIDE",
     Role: "Senior QA Tester",
     Description: [
@@ -20,14 +20,14 @@ export const career = [
       "Collaborate with dev/QA teams to verify fixes and ensure a seamless player experience across hardware.",
     ],
     From: new Date("2025-12-02"),
-    To: 'Today',
+    To: "Today",
     Image: img.SIDE,
   },
-    {
+  {
     Place: "ACS Pro",
     Role: "TI Support Analist",
     Description: [
-      "Administer ManageEngine CRM tools, including configuration, custom workflows, and module customization.,
+      "Administer ManageEngine CRM tools, including configuration, custom workflows, and module customization.",
       "Provide Tier 1/Tier 2 support, troubleshooting synchronization, data, API, and performance issues.",
       "Manage users, roles, and access controls; perform database maintenance and system health checks.",
       "Create technical documentation, user guides, and training to improve CRM adoption.",
@@ -96,12 +96,12 @@ export const career = [
   {
     Place: "LIQ",
     Description: [
-      "Provided top-notch bilingual technical support in English and Portuguese."
-      "Resolved technical issues and assisted users with operating systems, productivity apps, and hardware."
-      "Used incident management tools to ensure fast, accurate support."
-      "Delivered user training, how-to documentation, and support project management."
-      "Built positive user relationships and collaborated with analysts to provide exceptional service."
-   ],
+      "Provided top-notch bilingual technical support in English and Portuguese.",
+      "Resolved technical issues and assisted users with operating systems, productivity apps, and hardware.",
+      "Used incident management tools to ensure fast, accurate support.",
+      "Delivered user training, how-to documentation, and support project management.",
+      "Built positive user relationships and collaborated with analysts to provide exceptional service.",
+    ],
     Role: "Bilingual Tech Support",
     From: new Date("2017-03-01"),
     To: new Date("2019-11-20"),

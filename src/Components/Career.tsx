@@ -7,13 +7,13 @@ export const Career = () => {
     Place: string;
     Role: string;
     From: Date;
-    To: Date;
+    To: string | Date;
     Description: string[];
   }
 
   const Job = ({ Image, Place, Role, From, To, Description }: JobProps) => {
     const FromDate = getMonthYear(From);
-    const ToDate = getMonthYear(To);
+    const ToDate = typeof To === "string" ? To : getMonthYear(To);
     return (
       <div
         className="collapse h-fit outline outline-1 outline-gray-700 hover:outline-primary duration-300 cursor-pointer hover:text-primary"
