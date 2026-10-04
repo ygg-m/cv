@@ -33,9 +33,27 @@ jobs:
         with:
           path: dist
 
+  visual:
+    # ADR 0003: screenshots are compared only inside the official Playwright image.
+    # Keep the tag equal to the installed @playwright/test version (checked by tests/unit/tooling.spec.ts).
+    runs-on: ubuntu-latest
+    container: mcr.microsoft.com/playwright:v1.63.0-noble
+    env:
+      PLAYWRIGHT_DOCKER: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - run: npm ci
+      - run: npm run test:visual
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: visual-diffs
+          path: test-results/
+          retention-days: 14
+
   deploy:
     # ADR 0002: deploy only when the full Test Suite passed.
-    needs: test
+    needs: [test, visual]
     if: github.ref == 'refs/heads/main' && github.event_name == 'push'
     runs-on: ubuntu-latest
     permissions:

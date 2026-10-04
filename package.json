@@ -12,7 +12,10 @@
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
     "test:unit": "vitest run --configLoader runner",
-    "test:e2e": "playwright test"
+    "test:e2e": "playwright test --project=chromium --project=firefox --project=webkit",
+    "test:visual": "playwright test --project=visual",
+    "test:visual:docker": "node scripts/visual-docker.mjs",
+    "test:visual:update": "node scripts/visual-docker.mjs --update-snapshots"
   },
   "devDependencies": {
     "@axe-core/playwright": "^4.13.0",
