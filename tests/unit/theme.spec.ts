@@ -103,3 +103,11 @@ describe.each([
     expect(contrast(t[fg], t[bg])).toBeGreaterThanOrEqual(min);
   });
 });
+
+describe("Amber accent usage", () => {
+  it("TC-A11Y-U1 uses the raw amber token only as a background fill (it fails AA as text on light)", () => {
+    const uses = [...css.matchAll(/([\w-]+):\s*[^;{}]*var\(--accent\)/g)].map((m) => m[1]);
+    expect(uses.length).toBeGreaterThan(0);
+    expect(uses.every((property) => property === "background")).toBe(true);
+  });
+});
