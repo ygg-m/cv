@@ -409,6 +409,10 @@
       "required": [
         "localeToggle",
         "localeToggleLabel",
+        "themeToLight",
+        "themeToLightLabel",
+        "themeToDark",
+        "themeToDarkLabel",
         "present"
       ],
       "properties": {
@@ -418,6 +422,10 @@
         "localeToggleLabel": {
           "$ref": "#/$defs/text"
         },
+        "themeToLight": { "$ref": "#/$defs/text" },
+        "themeToLightLabel": { "$ref": "#/$defs/text" },
+        "themeToDark": { "$ref": "#/$defs/text" },
+        "themeToDarkLabel": { "$ref": "#/$defs/text" },
         "present": {
           "$ref": "#/$defs/text"
         }

@@ -385,6 +385,10 @@
   "ui": {
     "localeToggle": { "en": "Português", "pt-BR": "English" },
     "localeToggleLabel": { "en": "Switch language to Portuguese", "pt-BR": "Mudar idioma para inglês" },
+    "themeToLight": { "en": "Light", "pt-BR": "Claro" },
+    "themeToLightLabel": { "en": "Switch to light theme", "pt-BR": "Mudar para o tema claro" },
+    "themeToDark": { "en": "Dark", "pt-BR": "Escuro" },
+    "themeToDarkLabel": { "en": "Switch to dark theme", "pt-BR": "Mudar para o tema escuro" },
     "present": { "en": "Present", "pt-BR": "Atualmente" }
   }
 }

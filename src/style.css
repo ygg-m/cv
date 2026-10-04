@@ -1,5 +1,90 @@
+/* Design tokens. Every text/background pair is checked against WCAG AA in tests/unit/theme.spec.ts. */
+:root,
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #12101c;
+  --surface: #1b1830;
+  --text: #f1eefb;
+  --text-muted: #b4aed0;
+  --border-strong: #8a82b8;
+  --primary: #7c3aed;
+  --on-primary: #ffffff;
+  --primary-text: #b79cff;
+  --accent: #ffb703;
+  --on-accent: #1a1200;
+  --accent-text: #ffb703;
+  --focus: #b79cff;
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+  --bg: #faf8ff;
+  --surface: #ffffff;
+  --text: #1b1530;
+  --text-muted: #554e75;
+  --border-strong: #7a72a3;
+  --primary: #6d28d9;
+  --on-primary: #ffffff;
+  --primary-text: #6d28d9;
+  --accent: #ffb703;
+  --on-accent: #1a1200;
+  --accent-text: #8a4b00;
+  --focus: #6d28d9;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: system-ui, sans-serif;
   margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+
+main {
   padding: 2rem 1rem;
+}
+
+h1 {
+  margin: 0;
+}
+
+#headline {
+  color: var(--primary-text);
+  font-weight: 700;
+  margin: 0.25rem 0 0;
+}
+
+#subtitle {
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.toggle {
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--border-strong);
+  border-radius: 0.5rem;
+  padding: 0.4rem 0.9rem;
+  font: inherit;
+  cursor: pointer;
+}
+
+.toggle:hover {
+  border-color: var(--accent-text);
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
 }
