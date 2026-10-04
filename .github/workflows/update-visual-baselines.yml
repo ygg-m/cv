@@ -2,13 +2,7 @@ name: Update visual baselines
 
 # Run manually from the branch whose screenshots changed on purpose. Baselines are generated inside the
 # same Playwright image CI compares in (ADR 0003), then committed back to that branch.
-on:
-  workflow_dispatch:
-  # TEMPORARY bootstrap: GitHub only lists dispatchable workflows from the default branch, so until this
-  # file reaches main it runs once when it changes. Remove this trigger after the first baselines exist.
-  push:
-    branches: [rebuild]
-    paths: [.github/workflows/update-visual-baselines.yml]
+on: workflow_dispatch
 
 permissions:
   contents: write
