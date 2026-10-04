@@ -8,7 +8,7 @@ Work happens on the `rebuild` branch and merges to `main` when slice 11 is done.
 
 | Area | Decision |
 | --- | --- |
-| Positioning | "QA Tester \| Test Automation" |
+| Positioning | Title "QA Tester" with subtitle "Test Automation" (en) / "Automação de Testes" (pt-BR) |
 | Build | Vite + vanilla TypeScript, one `index.html` with inlined CSS/JS, images in `assets/` (ADR 0001) |
 | Locale | English default; `?lang=pt-BR` for Portuguese; toggle in the UI; persisted |
 | Theme | OS preference, fallback dark; explicit choice persisted; `data-theme` set by an inline script |
@@ -49,6 +49,8 @@ Each slice ships with its tests; each test title carries a test-case ID from `do
 
 ## Open items
 
-- Confirm the final headline wording in both Locales.
-- Choose real purple/amber shades while tuning contrast in slice 3.
-- Cypress/Selenium comparison suites are out of scope until the core suite is stable.
+- Purple/amber shades are Claude's call; finalize while tuning contrast in slice 3 (starting points in the table above).
+
+## Out of scope
+
+- Cypress and Selenium suites: reserved for later projects, once the core suite is stable.
