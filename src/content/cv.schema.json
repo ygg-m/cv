@@ -70,7 +70,8 @@
         "name",
         "headline",
         "location",
-        "about"
+        "about",
+        "description"
       ],
       "properties": {
         "name": {
@@ -111,6 +112,9 @@
           }
         },
         "about": {
+          "$ref": "#/$defs/text"
+        },
+        "description": {
           "$ref": "#/$defs/text"
         }
       }

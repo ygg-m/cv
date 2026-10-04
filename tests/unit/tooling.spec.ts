@@ -30,3 +30,27 @@ describe("Testing section honesty", () => {
     expect(existsSync(".github/workflows/ci.yml")).toBe(true);
   });
 });
+
+describe("Nightly checks (ADR 0002 gate stays fast; slow checks run on a schedule)", () => {
+  const yaml = readFileSync(".github/workflows/nightly.yml", "utf8");
+
+  it("TC-NGT-U1 runs on a schedule and can be started by hand", () => {
+    expect(yaml).toMatch(/schedule:\s*\n\s*- cron:/);
+    expect(yaml).toContain("workflow_dispatch:");
+  });
+
+  it("TC-NGT-U2 runs both Lighthouse and the link checker", () => {
+    expect(yaml).toContain("npm run lighthouse");
+    expect(yaml).toContain("npm run check:links");
+  });
+
+  it("TC-NGT-U3 Lighthouse enforces budgets for all four categories", () => {
+    const config = JSON.parse(readFileSync("lighthouserc.json", "utf8"));
+    const assertions = config.ci.assert.assertions;
+    for (const category of ["performance", "accessibility", "best-practices", "seo"]) {
+      const [level, options] = assertions[`categories:${category}`];
+      expect(level, category).toBe("error");
+      expect(options.minScore, category).toBeGreaterThanOrEqual(0.9);
+    }
+  });
+});

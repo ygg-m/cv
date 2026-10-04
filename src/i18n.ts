@@ -57,6 +57,9 @@ export function applyLocale(locale: Locale): void {
   document.querySelectorAll<HTMLElement>("[data-i18n-label]").forEach((el) => {
     el.setAttribute("aria-label", getText(el.dataset.i18nLabel!, locale));
   });
+  document
+    .querySelector('meta[name="description"]')
+    ?.setAttribute("content", getText("profile.description", locale));
   document.title = `${cv.profile.name} - ${getText("profile.headline.title", locale)}`;
 
   const target = otherLocale(locale);

@@ -22,6 +22,10 @@
     "about": {
       "en": "Senior QA Tester testing AAA games across PC, consoles and stores, with a background in IT support and ten years in design. I document and track defects in Jira and TestRail, and I am moving the repetitive work into automation with Playwright and TypeScript. This site is my test subject: every claim on it is backed by an automated check.",
       "pt-BR": "QA Tester Sênior testando jogos AAA em PC, consoles e lojas, com experiência em suporte de TI e dez anos em design. Documento e rastreio defeitos no Jira e no TestRail e estou levando o trabalho repetitivo para a automação com Playwright e TypeScript. Este site é meu objeto de teste: cada afirmação nele é sustentada por uma verificação automatizada."
+    },
+    "description": {
+      "en": "Ygor Goulart, QA Tester focused on test automation: AAA game QA, Playwright and TypeScript, and a CV that tests itself.",
+      "pt-BR": "Ygor Goulart, QA Tester com foco em automação de testes: QA de jogos AAA, Playwright e TypeScript, e um currículo que testa a si mesmo."
     }
   },
   "contact": {

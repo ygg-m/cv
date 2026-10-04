@@ -26,3 +26,6 @@ yarn-error.log*
 /dist
 /playwright-report
 /test-results
+
+# lighthouse
+/.lighthouseci
