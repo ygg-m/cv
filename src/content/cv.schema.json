@@ -1,0 +1,178 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CV Content Source",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["profile", "contact", "experience", "education", "certifications", "skills", "spokenLanguages", "devProjects", "ui"],
+  "$defs": {
+    "text": {
+      "description": "A string available in every Locale. A missing or empty translation is invalid.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["en", "pt-BR"],
+      "properties": {
+        "en": { "type": "string", "minLength": 1 },
+        "pt-BR": { "type": "string", "minLength": 1 }
+      }
+    },
+    "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+    "month": { "type": "string", "pattern": "^\\d{4}-(0[1-9]|1[0-2])$" },
+    "visibility": { "enum": ["visible", "more"] },
+    "url": { "type": "string", "pattern": "^https://" },
+    "image": { "type": "string", "pattern": "^[a-z0-9-]+/[a-z0-9.-]+$" }
+  },
+  "properties": {
+    "$schema": { "type": "string" },
+    "profile": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "headline", "location", "about"],
+      "properties": {
+        "name": { "type": "string", "minLength": 1 },
+        "headline": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["title", "subtitle"],
+          "properties": { "title": { "$ref": "#/$defs/text" }, "subtitle": { "$ref": "#/$defs/text" } }
+        },
+        "location": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["city", "country"],
+          "properties": { "city": { "type": "string", "minLength": 1 }, "country": { "$ref": "#/$defs/text" } }
+        },
+        "about": { "$ref": "#/$defs/text" }
+      }
+    },
+    "contact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["email", "linkedin", "github", "pdfOnly"],
+      "properties": {
+        "email": { "type": "string", "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$" },
+        "linkedin": { "$ref": "#/$defs/url" },
+        "github": { "$ref": "#/$defs/url" },
+        "pdfOnly": {
+          "description": "Personal data that appears only in the generated CV PDFs, never on the web page.",
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["phone"],
+          "properties": { "phone": { "type": "string", "minLength": 1 } }
+        }
+      }
+    },
+    "experience": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "visibility", "company", "role", "image", "highlights"],
+        "properties": {
+          "id": { "$ref": "#/$defs/id" },
+          "visibility": { "$ref": "#/$defs/visibility" },
+          "company": { "type": "string", "minLength": 1 },
+          "role": { "$ref": "#/$defs/text" },
+          "start": { "$ref": "#/$defs/month" },
+          "end": { "oneOf": [{ "$ref": "#/$defs/month" }, { "type": "null" }] },
+          "duration": { "$ref": "#/$defs/text" },
+          "image": { "$ref": "#/$defs/image" },
+          "highlights": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/text" } }
+        },
+        "oneOf": [{ "required": ["start", "end"] }, { "required": ["duration"] }]
+      }
+    },
+    "education": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "visibility", "kind", "institution", "title", "status", "image"],
+        "properties": {
+          "id": { "$ref": "#/$defs/id" },
+          "visibility": { "$ref": "#/$defs/visibility" },
+          "kind": { "enum": ["degree", "course", "professional"] },
+          "institution": { "oneOf": [{ "type": "string", "minLength": 1 }, { "$ref": "#/$defs/text" }] },
+          "title": { "$ref": "#/$defs/text" },
+          "status": { "enum": ["completed", "in-progress"] },
+          "expectedEnd": { "type": "string", "pattern": "^\\d{4}$" },
+          "topics": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
+          "image": { "$ref": "#/$defs/image" }
+        },
+        "if": { "properties": { "status": { "const": "in-progress" } }, "required": ["status"] },
+        "then": { "required": ["expectedEnd"] },
+        "else": { "not": { "required": ["expectedEnd"] } }
+      }
+    },
+    "certifications": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "name", "issuer", "year", "format"],
+        "properties": {
+          "id": { "$ref": "#/$defs/id" },
+          "name": { "$ref": "#/$defs/text" },
+          "issuer": { "type": "string", "minLength": 1 },
+          "year": { "type": "string", "pattern": "^\\d{4}$" },
+          "hours": { "type": "integer", "minimum": 1 },
+          "format": { "$ref": "#/$defs/text" }
+        }
+      }
+    },
+    "skills": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "core", "name", "items"],
+        "properties": {
+          "id": { "$ref": "#/$defs/id" },
+          "core": { "type": "boolean" },
+          "name": { "$ref": "#/$defs/text" },
+          "items": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string", "minLength": 1 } }
+        }
+      }
+    },
+    "spokenLanguages": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["name", "level"],
+        "properties": { "name": { "$ref": "#/$defs/text" }, "level": { "$ref": "#/$defs/text" } }
+      }
+    },
+    "devProjects": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "name", "description", "tags", "github", "image"],
+        "properties": {
+          "id": { "$ref": "#/$defs/id" },
+          "name": { "$ref": "#/$defs/text" },
+          "description": { "$ref": "#/$defs/text" },
+          "tags": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
+          "github": { "$ref": "#/$defs/url" },
+          "live": { "$ref": "#/$defs/url" },
+          "image": { "$ref": "#/$defs/image" }
+        }
+      }
+    },
+    "ui": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["localeToggle", "localeToggleLabel", "present"],
+      "properties": {
+        "localeToggle": { "$ref": "#/$defs/text" },
+        "localeToggleLabel": { "$ref": "#/$defs/text" },
+        "present": { "$ref": "#/$defs/text" }
+      }
+    }
+  }
+}
