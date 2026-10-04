@@ -1,0 +1,65 @@
+name: Bug report
+description: Something on the CV Site does not behave as the test plan says it should
+labels: [bug, needs-triage]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: One or two sentences. What is wrong, and where?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      value: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result
+      description: Reference the requirement (R1 to R13 in docs/qa/test-plan.md) or test case ID if there is one.
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual result
+    validations:
+      required: true
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      description: See docs/qa/strategy.md. A maintainer applies the matching severity label.
+      options:
+        - Critical (private data exposed, page unusable, deploy broken)
+        - Major (a requirement fails for a whole Locale, Theme or browser)
+        - Minor (cosmetic or limited scope, has a workaround)
+        - Trivial (typo-level polish)
+    validations:
+      required: true
+  - type: checkboxes
+    id: environment-locale
+    attributes:
+      label: Locale and Theme
+      options:
+        - label: English
+        - label: Portuguese (pt-BR)
+        - label: Dark theme
+        - label: Light theme
+  - type: input
+    id: browser
+    attributes:
+      label: Browser, version and OS
+      placeholder: Firefox 141 on Windows 11
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Screenshots, console output, links to a failing CI run or Playwright trace.

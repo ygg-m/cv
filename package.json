@@ -14,6 +14,7 @@
     "build:all": "npm run build && npm run build:pdf",
     "check:links": "tsx scripts/check-links.ts",
     "lighthouse": "lhci autorun",
+    "docs:test-cases": "tsx scripts/test-cases.ts --write",
     "typecheck": "tsc --noEmit",
     "test:unit": "vitest run --configLoader runner",
     "test:e2e": "playwright test --project=chromium --project=firefox --project=webkit",
