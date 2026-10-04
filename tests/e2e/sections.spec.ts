@@ -25,7 +25,7 @@ test.describe("Sections", () => {
     await expect(jobs.nth(0)).toContainText("Dec 2025 – Present");
     await expect(jobs.nth(1)).toContainText("ACS Pro");
     await expect(jobs.nth(2)).toContainText("Concentrix");
-    await expect(page.getByText("ACSoftware")).toHaveCount(0);
+    await expect(page.getByText("ACSoftware")).toBeHidden();
   });
 
   test("TC-SEC-04 shows the degree as in progress", async ({ page }) => {

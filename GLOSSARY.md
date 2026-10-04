@@ -46,7 +46,7 @@ The QA-relevant skill group shown first (test automation, API testing, QA proces
 _Avoid_: Top skills, main skills
 
 **More**:
-A button that opens a modal listing the Content Source entries that are not QA-relevant (older or unrelated experience and education).
+A button, one per section (experience, education), that opens a modal listing the Content Source entries that are not QA-relevant (older or unrelated).
 _Avoid_: Other, archive, hidden section
 
 **Dev Projects**:

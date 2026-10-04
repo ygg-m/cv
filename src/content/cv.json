@@ -718,6 +718,34 @@
     "footer": {
       "en": "Built and tested by Ygor Goulart",
       "pt-BR": "Criado e testado por Ygor Goulart"
+    },
+    "more": {
+      "en": "More",
+      "pt-BR": "Mais"
+    },
+    "moreExperience": {
+      "en": "More experience",
+      "pt-BR": "Mais experiências"
+    },
+    "moreEducation": {
+      "en": "More education",
+      "pt-BR": "Mais formação"
+    },
+    "devProjects": {
+      "en": "Dev Projects",
+      "pt-BR": "Projetos de Desenvolvimento"
+    },
+    "close": {
+      "en": "Close",
+      "pt-BR": "Fechar"
+    },
+    "github": {
+      "en": "GitHub",
+      "pt-BR": "GitHub"
+    },
+    "liveDemo": {
+      "en": "Live demo",
+      "pt-BR": "Demonstração"
     }
   },
   "pdfOnly": {

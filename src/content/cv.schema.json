@@ -410,7 +410,14 @@
         "hours",
         "emailLabel",
         "footer",
-        "sections"
+        "sections",
+        "more",
+        "moreExperience",
+        "moreEducation",
+        "devProjects",
+        "close",
+        "github",
+        "liveDemo"
       ],
       "properties": {
         "localeToggle": {
@@ -495,6 +502,27 @@
               "$ref": "#/$defs/text"
             }
           }
+        },
+        "more": {
+          "$ref": "#/$defs/text"
+        },
+        "moreExperience": {
+          "$ref": "#/$defs/text"
+        },
+        "moreEducation": {
+          "$ref": "#/$defs/text"
+        },
+        "devProjects": {
+          "$ref": "#/$defs/text"
+        },
+        "close": {
+          "$ref": "#/$defs/text"
+        },
+        "github": {
+          "$ref": "#/$defs/text"
+        },
+        "liveDemo": {
+          "$ref": "#/$defs/text"
         }
       }
     },

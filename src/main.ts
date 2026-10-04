@@ -34,6 +34,22 @@ function render(): void {
 }
 render();
 
+// Native <dialog> provides Escape-to-close, focus trapping and focus return to the opener.
+content.addEventListener("click", (event) => {
+  const target = event.target as HTMLElement;
+  const opener = target.closest<HTMLElement>("[data-open-dialog]");
+  if (opener) {
+    (document.getElementById(opener.dataset.openDialog!) as HTMLDialogElement | null)?.showModal();
+    return;
+  }
+  if (target.closest("[data-close-dialog]")) {
+    target.closest("dialog")?.close();
+    return;
+  }
+  // A click on the backdrop (the dialog element itself, outside its content box) closes it.
+  if (target instanceof HTMLDialogElement) target.close();
+});
+
 document.getElementById("locale-toggle")?.addEventListener("click", () => {
   locale = otherLocale(locale);
   storeLocale(locale);

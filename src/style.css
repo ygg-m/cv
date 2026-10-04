@@ -283,3 +283,62 @@ footer {
   outline: 2px solid var(--focus);
   outline-offset: 2px;
 }
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.button-secondary {
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--border-strong);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.button-secondary:hover {
+  border-color: var(--accent-text);
+}
+
+dialog {
+  width: min(100% - 2rem, 48rem);
+  max-height: calc(100dvh - 2rem);
+  padding: 1.25rem;
+  border: 1px solid var(--border-strong);
+  border-radius: 1rem;
+  background: var(--bg);
+  color: var(--text);
+}
+
+dialog::backdrop {
+  background: rgb(0 0 0 / 0.65);
+}
+
+body:has(dialog[open]) {
+  overflow: hidden;
+}
+
+.dialog-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.dialog-header h2 {
+  margin: 0;
+}
+
+.dialog-header h2::after {
+  display: none;
+}
+
+.links {
+  display: flex;
+  gap: 1rem;
+  margin: 0.5rem 0 0;
+}

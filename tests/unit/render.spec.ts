@@ -27,14 +27,21 @@ describe.each(["en", "pt-BR"] as const)("renderContent (%s)", (locale) => {
     }
   });
 
-  it("TC-SEC-U5 renders only Visible Experience and Visible Education", () => {
-    const experienceIds = [...html.matchAll(/data-list="experience"[\s\S]*?<\/ul>\s*<\/section>/g)][0][0];
-    for (const job of cv.experience) {
-      const present = experienceIds.includes(`data-id="${job.id}"`);
-      expect(present, job.id).toBe(job.visibility === "visible");
+  it("TC-SEC-U5 lists Visible entries on the page and More entries only inside the More dialogs", () => {
+    const main = html.slice(0, html.indexOf("</main>"));
+    const dialogs = html.slice(html.indexOf("</main>"));
+    for (const entry of [...cv.experience, ...cv.education]) {
+      const marker = `data-id="${entry.id}"`;
+      expect(main.includes(marker), `${entry.id} in main`).toBe(entry.visibility === "visible");
+      expect(dialogs.includes(marker), `${entry.id} in dialogs`).toBe(entry.visibility === "more");
     }
-    for (const item of cv.education) {
-      expect(html.includes(`data-id="${item.id}"`), item.id).toBe(item.visibility === "visible");
+  });
+
+  it("TC-SEC-U10 renders every Dev Project with its GitHub link inside the Dev Projects dialog", () => {
+    const dialogs = html.slice(html.indexOf("</main>"));
+    for (const project of cv.devProjects) {
+      expect(dialogs).toContain(`data-id="${project.id}"`);
+      expect(dialogs).toContain(project.github);
     }
   });
 

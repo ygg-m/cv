@@ -33,7 +33,10 @@ function renderHero(locale: Locale): string {
       <p id="headline">${t(profile.headline.title, locale)}</p>
       <p id="subtitle">${t(profile.headline.subtitle, locale)}</p>
       <p class="muted" id="location">${escapeHtml(profile.location.city)}, ${t(profile.location.country, locale)}</p>
-      <p><a class="button button-primary" href="#contact">${ui("contactCta", locale)}</a></p>
+      <p class="actions">
+        <a class="button button-primary" href="#contact">${ui("contactCta", locale)}</a>
+        <button class="button button-secondary" type="button" data-open-dialog="dialog-dev-projects">${ui("devProjects", locale)}</button>
+      </p>
     </section>`;
 }
 
@@ -67,14 +70,11 @@ function renderSkills(locale: Locale): string {
     </section>`;
 }
 
-function renderExperience(locale: Locale): string {
-  const jobs = cv.experience.filter((e) => e.visibility === "visible");
+type Job = (typeof cv.experience)[number];
+type Study = (typeof cv.education)[number];
+
+function jobCard(job: Job, locale: Locale): string {
   return `
-    <section id="experience" aria-labelledby="experience-title">
-      <h2 id="experience-title">${section("experience", locale)}</h2>
-      <ul class="stack" data-list="experience">${jobs
-        .map(
-          (job) => `
         <li class="card entry" data-id="${job.id}">
           ${image(job.image)}
           <div>
@@ -82,9 +82,37 @@ function renderExperience(locale: Locale): string {
             <p class="muted">${escapeHtml(job.company)} &middot; ${formatPeriod(job.start, job.end, locale)}</p>
             <ul>${job.highlights.map((h) => `<li>${t(h, locale)}</li>`).join("")}</ul>
           </div>
-        </li>`,
-        )
-        .join("")}</ul>
+        </li>`;
+}
+
+function studyCard(item: Study, locale: Locale): string {
+  const institution = typeof item.institution === "string" ? escapeHtml(item.institution) : t(item.institution, locale);
+  const status = item.status === "in-progress" ? ` &middot; ${ui("inProgress", locale)}` : "";
+  const topics = item.topics
+    ? `<ul class="chips">${item.topics.map((x) => `<li>${escapeHtml(x)}</li>`).join("")}</ul>`
+    : "";
+  return `
+        <li class="card entry" data-id="${item.id}">
+          ${image(item.image)}
+          <div>
+            <h3>${t(item.title, locale)}</h3>
+            <p class="muted">${institution}${status}</p>
+            ${topics}
+          </div>
+        </li>`;
+}
+
+function moreButton(dialogId: string, labelKey: "moreExperience" | "moreEducation", locale: Locale): string {
+  return `<p><button class="button button-secondary" type="button" data-open-dialog="${dialogId}" aria-label="${ui(labelKey, locale)}">${ui("more", locale)}</button></p>`;
+}
+
+function renderExperience(locale: Locale): string {
+  const jobs = cv.experience.filter((e) => e.visibility === "visible");
+  return `
+    <section id="experience" aria-labelledby="experience-title">
+      <h2 id="experience-title">${section("experience", locale)}</h2>
+      <ul class="stack" data-list="experience">${jobs.map((job) => jobCard(job, locale)).join("")}</ul>
+      ${moreButton("dialog-more-experience", "moreExperience", locale)}
     </section>`;
 }
 
@@ -93,20 +121,8 @@ function renderEducation(locale: Locale): string {
   return `
     <section id="education" aria-labelledby="education-title">
       <h2 id="education-title">${section("education", locale)}</h2>
-      <ul class="stack" data-list="education">${items
-        .map((item) => {
-          const institution = typeof item.institution === "string" ? escapeHtml(item.institution) : t(item.institution, locale);
-          const status = item.status === "in-progress" ? ` &middot; ${ui("inProgress", locale)}` : "";
-          return `
-        <li class="card entry" data-id="${item.id}">
-          ${image(item.image)}
-          <div>
-            <h3>${t(item.title, locale)}</h3>
-            <p class="muted">${institution}${status}</p>
-          </div>
-        </li>`;
-        })
-        .join("")}</ul>
+      <ul class="stack" data-list="education">${items.map((item) => studyCard(item, locale)).join("")}</ul>
+      ${moreButton("dialog-more-education", "moreEducation", locale)}
     </section>`;
 }
 
@@ -141,10 +157,64 @@ function renderContact(locale: Locale): string {
     </section>`;
 }
 
+function dialog(id: string, title: string, body: string, locale: Locale): string {
+  return `
+    <dialog id="${id}" aria-labelledby="${id}-title">
+      <div class="dialog-header">
+        <h2 id="${id}-title">${title}</h2>
+        <button class="toggle" type="button" data-close-dialog>${ui("close", locale)}</button>
+      </div>
+      ${body}
+    </dialog>`;
+}
+
+function projectCard(project: (typeof cv.devProjects)[number], locale: Locale): string {
+  const name = t(project.name, locale);
+  const live =
+    "live" in project
+      ? `<a href="${escapeHtml(project.live)}" target="_blank" rel="noopener" aria-label="${ui("liveDemo", locale)}: ${name}">${ui("liveDemo", locale)}</a>`
+      : "";
+  return `
+        <li class="card entry" data-id="${project.id}">
+          ${image(project.image)}
+          <div>
+            <h3>${name}</h3>
+            <p>${t(project.description, locale)}</p>
+            <ul class="chips">${project.tags.map((tag) => `<li>${escapeHtml(tag)}</li>`).join("")}</ul>
+            <p class="links"><a href="${escapeHtml(project.github)}" target="_blank" rel="noopener" aria-label="${ui("github", locale)}: ${name}">${ui("github", locale)}</a> ${live}</p>
+          </div>
+        </li>`;
+}
+
+function renderDialogs(locale: Locale): string {
+  const moreJobs = cv.experience.filter((e) => e.visibility === "more");
+  const moreStudies = cv.education.filter((e) => e.visibility === "more");
+  return (
+    dialog(
+      "dialog-more-experience",
+      ui("moreExperience", locale),
+      `<ul class="stack" data-list="more-experience">${moreJobs.map((j) => jobCard(j, locale)).join("")}</ul>`,
+      locale,
+    ) +
+    dialog(
+      "dialog-more-education",
+      ui("moreEducation", locale),
+      `<ul class="stack" data-list="more-education">${moreStudies.map((e) => studyCard(e, locale)).join("")}</ul>`,
+      locale,
+    ) +
+    dialog(
+      "dialog-dev-projects",
+      ui("devProjects", locale),
+      `<ul class="stack" data-list="dev-projects">${cv.devProjects.map((p) => projectCard(p, locale)).join("")}</ul>`,
+      locale,
+    )
+  );
+}
+
 /** Everything inside #content for one Locale. Pure string output so the build can pre-render it. */
 export function renderContent(locale: Locale): string {
   return `
     <main id="main" tabindex="-1">${renderHero(locale)}${renderAbout(locale)}${renderSkills(locale)}${renderExperience(locale)}${renderEducation(locale)}${renderCertifications(locale)}${renderContact(locale)}
     </main>
-    <footer><p class="muted">${ui("footer", locale)}</p></footer>`;
+    <footer><p class="muted">${ui("footer", locale)}</p></footer>${renderDialogs(locale)}`;
 }
