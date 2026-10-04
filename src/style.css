@@ -342,3 +342,15 @@ body:has(dialog[open]) {
   gap: 1rem;
   margin: 0.5rem 0 0;
 }
+
+.links-list {
+  margin-top: 1rem;
+}
+
+.links-list li {
+  padding: 0.25rem 0.9rem;
+}
+
+#testing img {
+  display: block;
+}

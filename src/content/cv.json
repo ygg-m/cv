@@ -685,6 +685,10 @@
       "contact": {
         "en": "Contact",
         "pt-BR": "Contato"
+      },
+      "testing": {
+        "en": "Testing",
+        "pt-BR": "Testes"
       }
     },
     "coreSkills": {
@@ -754,5 +758,127 @@
   },
   "pdfOnly": {
     "phone": "+55 (11) 95283-1030"
+  },
+  "testing": {
+    "title": {
+      "en": "How this site is tested",
+      "pt-BR": "Como este site é testado"
+    },
+    "intro": {
+      "en": "This CV is also my test subject. Every change runs through the checks below, and the site is deployed only when all of them pass.",
+      "pt-BR": "Este currículo também é meu objeto de teste. Toda alteração passa pelas verificações abaixo, e o site só é publicado quando todas passam."
+    },
+    "layers": [
+      {
+        "id": "functional",
+        "name": {
+          "en": "Functional end-to-end",
+          "pt-BR": "Funcional ponta a ponta"
+        },
+        "tool": "Playwright · Chromium, Firefox, WebKit",
+        "description": {
+          "en": "Language and theme switching, sections, modals, downloads and persistence.",
+          "pt-BR": "Troca de idioma e tema, seções, modais, downloads e persistência."
+        }
+      },
+      {
+        "id": "accessibility",
+        "name": {
+          "en": "Accessibility",
+          "pt-BR": "Acessibilidade"
+        },
+        "tool": "axe-core · WCAG 2.1 AA",
+        "description": {
+          "en": "Every theme and language combination, with and without open modals, plus keyboard and focus checks.",
+          "pt-BR": "Todas as combinações de tema e idioma, com e sem modais abertos, além de verificações de teclado e foco."
+        }
+      },
+      {
+        "id": "visual",
+        "name": {
+          "en": "Visual regression",
+          "pt-BR": "Regressão visual"
+        },
+        "tool": "Playwright screenshots · Docker",
+        "description": {
+          "en": "Baselines across theme, language, screen size and modals, compared in a fixed container.",
+          "pt-BR": "Referências por tema, idioma, tamanho de tela e modais, comparadas em um contêiner fixo."
+        }
+      },
+      {
+        "id": "unit",
+        "name": {
+          "en": "Unit and content validation",
+          "pt-BR": "Unidade e validação de conteúdo"
+        },
+        "tool": "Vitest · JSON Schema",
+        "description": {
+          "en": "Content schema, missing translations, color contrast, language and theme rules, PDF layout.",
+          "pt-BR": "Esquema do conteúdo, traduções ausentes, contraste de cores, regras de idioma e tema, layout do PDF."
+        }
+      },
+      {
+        "id": "performance",
+        "name": {
+          "en": "Performance and SEO",
+          "pt-BR": "Desempenho e SEO"
+        },
+        "tool": "Lighthouse CI · nightly",
+        "description": {
+          "en": "Budgets for performance, accessibility, best practices and SEO.",
+          "pt-BR": "Metas de desempenho, acessibilidade, boas práticas e SEO."
+        }
+      },
+      {
+        "id": "links",
+        "name": {
+          "en": "Link checking",
+          "pt-BR": "Verificação de links"
+        },
+        "tool": "Link checker · nightly",
+        "description": {
+          "en": "Every link on the published site is requested every night.",
+          "pt-BR": "Todos os links do site publicado são verificados toda noite."
+        }
+      },
+      {
+        "id": "gate",
+        "name": {
+          "en": "Quality gate",
+          "pt-BR": "Portão de qualidade"
+        },
+        "tool": "GitHub Actions",
+        "description": {
+          "en": "The site is deployed only when every check above passes.",
+          "pt-BR": "O site só é publicado quando todas as verificações acima passam."
+        }
+      }
+    ],
+    "links": {
+      "report": {
+        "en": "Playwright report",
+        "pt-BR": "Relatório do Playwright"
+      },
+      "plan": {
+        "en": "Test plan",
+        "pt-BR": "Plano de testes"
+      },
+      "source": {
+        "en": "Source code",
+        "pt-BR": "Código-fonte"
+      },
+      "bugs": {
+        "en": "Bug reports",
+        "pt-BR": "Relatos de bugs"
+      },
+      "runs": {
+        "en": "CI runs",
+        "pt-BR": "Execuções de CI"
+      }
+    },
+    "badgeAlt": {
+      "en": "CI status",
+      "pt-BR": "Status do CI"
+    }
   }
 }

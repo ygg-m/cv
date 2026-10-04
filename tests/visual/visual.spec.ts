@@ -25,7 +25,12 @@ const MODALS = [
   { id: "dev-projects", button: "Dev Projects" },
 ] as const;
 
+// The live CI badge changes with every run; replace it with a fixed image so screenshots are deterministic.
+const BADGE_SVG =
+  '<svg xmlns="http://www.w3.org/2000/svg" width="78" height="20"><rect width="78" height="20" rx="3" fill="#3fb950"/><text x="39" y="14" fill="#fff" font-family="sans-serif" font-size="11" text-anchor="middle">CI passing</text></svg>';
+
 async function prepare(page: Page, theme: string, query: string) {
+  await page.route("**/badge.svg*", (route) => route.fulfill({ contentType: "image/svg+xml", body: BADGE_SVG }));
   await page.addInitScript((value) => localStorage.setItem("theme", value), theme);
   await page.goto(`/${query}`);
   await expect(page.locator("html")).toHaveAttribute("data-theme", theme);

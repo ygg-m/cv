@@ -146,6 +146,37 @@ function renderCertifications(locale: Locale): string {
     </section>`;
 }
 
+export const REPO_URL = "https://github.com/ygg-m/cv";
+
+function renderTesting(locale: Locale): string {
+  const { testing } = cv;
+  const link = (key: keyof typeof testing.links, href: string) =>
+    `<li><a href="${href}" rel="noopener">${t(testing.links[key], locale)}</a></li>`;
+  return `
+    <section id="testing" aria-labelledby="testing-title">
+      <h2 id="testing-title">${t(testing.title, locale)}</h2>
+      <p>${t(testing.intro, locale)}</p>
+      <p><a href="${REPO_URL}/actions/workflows/ci.yml" rel="noopener"><img src="${REPO_URL}/actions/workflows/ci.yml/badge.svg?branch=main" alt="${t(testing.badgeAlt, locale)}" width="78" height="20"></a></p>
+      <ul class="grid" data-list="test-layers">${testing.layers
+        .map(
+          (layer) => `
+        <li class="card" data-id="${layer.id}">
+          <h3>${t(layer.name, locale)}</h3>
+          <p class="muted">${escapeHtml(layer.tool)}</p>
+          <p>${t(layer.description, locale)}</p>
+        </li>`,
+        )
+        .join("")}</ul>
+      <ul class="chips links-list" data-list="testing-links">
+        ${link("report", "reports/")}
+        ${link("plan", `${REPO_URL}/blob/main/docs/qa/test-plan.md`)}
+        ${link("source", REPO_URL)}
+        ${link("bugs", `${REPO_URL}/issues?q=label%3Abug`)}
+        ${link("runs", `${REPO_URL}/actions`)}
+      </ul>
+    </section>`;
+}
+
 function renderContact(locale: Locale): string {
   const { contact, profile } = cv;
   return `
@@ -217,7 +248,7 @@ function renderDialogs(locale: Locale): string {
 /** Everything inside #content for one Locale. Pure string output so the build can pre-render it. */
 export function renderContent(locale: Locale): string {
   return `
-    <main id="main" tabindex="-1">${renderHero(locale)}${renderAbout(locale)}${renderSkills(locale)}${renderExperience(locale)}${renderEducation(locale)}${renderCertifications(locale)}${renderContact(locale)}
+    <main id="main" tabindex="-1">${renderHero(locale)}${renderAbout(locale)}${renderSkills(locale)}${renderExperience(locale)}${renderEducation(locale)}${renderCertifications(locale)}${renderTesting(locale)}${renderContact(locale)}
     </main>
     <footer><p class="muted">${ui("footer", locale)}</p></footer>${renderDialogs(locale)}`;
 }

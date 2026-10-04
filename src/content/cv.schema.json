@@ -13,7 +13,8 @@
     "spokenLanguages",
     "devProjects",
     "ui",
-    "pdfOnly"
+    "pdfOnly",
+    "testing"
   ],
   "$defs": {
     "text": {
@@ -481,7 +482,8 @@
             "experience",
             "education",
             "certifications",
-            "contact"
+            "contact",
+            "testing"
           ],
           "properties": {
             "about": {
@@ -500,6 +502,9 @@
               "$ref": "#/$defs/text"
             },
             "contact": {
+              "$ref": "#/$defs/text"
+            },
+            "testing": {
               "$ref": "#/$defs/text"
             }
           }
@@ -541,6 +546,85 @@
         "phone": {
           "type": "string",
           "minLength": 1
+        }
+      }
+    },
+    "testing": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "title",
+        "intro",
+        "layers",
+        "links",
+        "badgeAlt"
+      ],
+      "properties": {
+        "title": {
+          "$ref": "#/$defs/text"
+        },
+        "intro": {
+          "$ref": "#/$defs/text"
+        },
+        "badgeAlt": {
+          "$ref": "#/$defs/text"
+        },
+        "layers": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "id",
+              "name",
+              "tool",
+              "description"
+            ],
+            "properties": {
+              "id": {
+                "$ref": "#/$defs/id"
+              },
+              "name": {
+                "$ref": "#/$defs/text"
+              },
+              "tool": {
+                "type": "string",
+                "minLength": 1
+              },
+              "description": {
+                "$ref": "#/$defs/text"
+              }
+            }
+          }
+        },
+        "links": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "report",
+            "plan",
+            "source",
+            "bugs",
+            "runs"
+          ],
+          "properties": {
+            "report": {
+              "$ref": "#/$defs/text"
+            },
+            "plan": {
+              "$ref": "#/$defs/text"
+            },
+            "source": {
+              "$ref": "#/$defs/text"
+            },
+            "bugs": {
+              "$ref": "#/$defs/text"
+            },
+            "runs": {
+              "$ref": "#/$defs/text"
+            }
+          }
         }
       }
     }

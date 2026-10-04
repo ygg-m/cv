@@ -9,7 +9,8 @@ import {
   skills,
   spokenLanguages,
   devProjects,
+  testing,
   ui,
 } from "./cv.json";
 
-export const cv = { profile, contact, experience, education, certifications, skills, spokenLanguages, devProjects, ui };
+export const cv = { profile, contact, experience, education, certifications, skills, spokenLanguages, devProjects, testing, ui };
