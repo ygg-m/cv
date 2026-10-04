@@ -23,6 +23,8 @@ export function formatPeriod(start: string, end: string | null, locale: Locale):
   return `${formatPoint(start, locale)} – ${to}`;
 }
 
+export const pdfFileName = (locale: Locale): string => `Ygor-Goulart-CV-${locale}.pdf`;
+
 const image = (path: string): string => `<img src="assets/${path}" alt="" width="64" height="64" loading="lazy">`;
 
 function renderHero(locale: Locale): string {
@@ -35,6 +37,7 @@ function renderHero(locale: Locale): string {
       <p class="muted" id="location">${escapeHtml(profile.location.city)}, ${t(profile.location.country, locale)}</p>
       <p class="actions">
         <a class="button button-primary" href="#contact">${ui("contactCta", locale)}</a>
+        <a class="button button-secondary" href="cv/${pdfFileName(locale)}" download>${ui("downloadCv", locale)}</a>
         <button class="button button-secondary" type="button" data-open-dialog="dialog-dev-projects">${ui("devProjects", locale)}</button>
       </p>
     </section>`;

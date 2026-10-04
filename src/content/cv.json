@@ -746,6 +746,10 @@
     "liveDemo": {
       "en": "Live demo",
       "pt-BR": "Demonstração"
+    },
+    "downloadCv": {
+      "en": "Download CV",
+      "pt-BR": "Baixar CV"
     }
   },
   "pdfOnly": {

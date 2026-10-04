@@ -12,7 +12,7 @@ export default defineConfig({
   // per screenshot is enough: no platform suffix.
   snapshotPathTemplate: "{testDir}/__screenshots__/{arg}{ext}",
   webServer: {
-    command: "npm run build && npm run preview",
+    command: "npm run build:all && npm run preview",
     url: `http://localhost:${PORT}`,
     reuseExistingServer: !process.env.CI,
     timeout: 120_000,

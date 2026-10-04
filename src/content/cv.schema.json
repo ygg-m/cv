@@ -417,7 +417,8 @@
         "devProjects",
         "close",
         "github",
-        "liveDemo"
+        "liveDemo",
+        "downloadCv"
       ],
       "properties": {
         "localeToggle": {
@@ -522,6 +523,9 @@
           "$ref": "#/$defs/text"
         },
         "liveDemo": {
+          "$ref": "#/$defs/text"
+        },
+        "downloadCv": {
           "$ref": "#/$defs/text"
         }
       }

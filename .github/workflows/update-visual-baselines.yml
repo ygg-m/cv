@@ -1,8 +1,14 @@
 name: Update visual baselines
 
-# Run manually from the branch whose screenshots changed on purpose. Baselines are generated inside the
-# same Playwright image CI compares in (ADR 0003), then committed back to that branch.
-on: workflow_dispatch
+# Run when screenshots changed on purpose. Baselines are generated inside the same Playwright image CI
+# compares in (ADR 0003), then committed back to the branch.
+#
+# GitHub only lists dispatchable workflows from the default branch, so on a feature branch trigger it by
+# changing the marker file: `date > .github/visual-baselines.trigger`, commit, push.
+on:
+  workflow_dispatch:
+  push:
+    paths: [.github/visual-baselines.trigger]
 
 permissions:
   contents: write
