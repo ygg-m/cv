@@ -26,7 +26,7 @@ Hero (name, headline, buttons: Contact, Download CV, Dev Projects) → About →
 
 - **Visible Experience:** SIDE (Senior QA Tester), ACS Pro (IT Support), Concentrix.
 - **More** (modal): BI Agent (ACSoftware), IdeaMaker, LIQ, PAK, freelance; design background (10 years graphic design, UX/UI).
-- **Visible Education:** Computer Science degree (Anhembi Morumbi), status: in progress, expected 2027.
+- **Visible Education:** Computer Science degree (Anhembi Morumbi), status: in progress (no end date).
 - **Certifications:** QA Certification (Iterasys, 2024); Console, Platform and Store Title Certification (SIDE, 2026, 112 h).
 - **Skills** (no proficiency bars; Core Skills first): Test Automation (Playwright, Cypress, Selenium), API Testing (Postman), QA Process (Jira, TestRail, Confluence, Agile/Scrum), Languages (JavaScript, TypeScript, Python, SQL), Frameworks (Node.js, React, Angular, WordPress), DevOps & Tools (Git/GitHub, Docker, databases: MySQL, PostgreSQL, SQL Server, MongoDB; OS: Windows, Linux), IT Ops (ITIL, ManageEngine, Zoho Suite, Active Directory, Office 365, Incident Management, DevOps), Design (Figma, Adobe). Spoken languages (Portuguese native, English fluent) as a small separate block.
 - **Modals** (More, Dev Projects): native `<dialog>`; Escape closes; focus returns to the opener.

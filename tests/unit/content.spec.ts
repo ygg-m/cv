@@ -28,17 +28,15 @@ describe("Content Source", () => {
     expect(isValid(data)).toBe(false);
   });
 
-  it("TC-CON-04 requires an expected end for an in-progress education entry", () => {
-    const data = clone();
-    delete data.education[0].expectedEnd;
-    expect(data.education[0].status).toBe("in-progress");
-    expect(isValid(data)).toBe(false);
+  it("TC-CON-04 accepts an in-progress degree without an end date", () => {
+    expect(cv.education[0].status).toBe("in-progress");
+    expect(cv.education[0]).not.toHaveProperty("expectedEnd");
+    expect(isValid(cv)).toBe(true);
   });
 
-  it("TC-CON-05 rejects an expected end on a completed education entry", () => {
-    const data = clone();
-    data.education[0].status = "completed";
-    expect(isValid(data)).toBe(false);
+  it("TC-CON-05 accepts a year-only start for ongoing experience", () => {
+    const freelance = cv.experience.find((e) => e.id === "freelance");
+    expect(freelance).toMatchObject({ start: "2010", end: null });
   });
 
   it("TC-CON-06 rejects personal data the site must not hold (birthday)", () => {

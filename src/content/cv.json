@@ -200,7 +200,8 @@
       "visibility": "more",
       "company": "Freelance",
       "role": { "en": "Designer & Developer", "pt-BR": "Designer e Desenvolvedor" },
-      "duration": { "en": "10+ years", "pt-BR": "mais de 10 anos" },
+      "start": "2010",
+      "end": null,
       "image": "career/freelance.png",
       "highlights": [
         {
@@ -218,7 +219,6 @@
       "institution": "Universidade Anhembi Morumbi",
       "title": { "en": "Bachelor's in Computer Science", "pt-BR": "Bacharelado em Ciência da Computação" },
       "status": "in-progress",
-      "expectedEnd": "2027",
       "image": "education/anhembimorumbi.jpg"
     },
     {
