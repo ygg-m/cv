@@ -12,7 +12,8 @@
     "skills",
     "spokenLanguages",
     "devProjects",
-    "ui"
+    "ui",
+    "pdfOnly"
   ],
   "$defs": {
     "text": {
@@ -119,8 +120,7 @@
       "required": [
         "email",
         "linkedin",
-        "github",
-        "pdfOnly"
+        "github"
       ],
       "properties": {
         "email": {
@@ -132,20 +132,6 @@
         },
         "github": {
           "$ref": "#/$defs/url"
-        },
-        "pdfOnly": {
-          "description": "Personal data that appears only in the generated CV PDFs, never on the web page.",
-          "type": "object",
-          "additionalProperties": false,
-          "required": [
-            "phone"
-          ],
-          "properties": {
-            "phone": {
-              "type": "string",
-              "minLength": 1
-            }
-          }
         }
       }
     },
@@ -413,7 +399,18 @@
         "themeToLightLabel",
         "themeToDark",
         "themeToDarkLabel",
-        "present"
+        "present",
+        "skipToContent",
+        "navLabel",
+        "coreSkills",
+        "supportingSkills",
+        "spokenLanguages",
+        "contactCta",
+        "inProgress",
+        "hours",
+        "emailLabel",
+        "footer",
+        "sections"
       ],
       "properties": {
         "localeToggle": {
@@ -422,12 +419,96 @@
         "localeToggleLabel": {
           "$ref": "#/$defs/text"
         },
-        "themeToLight": { "$ref": "#/$defs/text" },
-        "themeToLightLabel": { "$ref": "#/$defs/text" },
-        "themeToDark": { "$ref": "#/$defs/text" },
-        "themeToDarkLabel": { "$ref": "#/$defs/text" },
+        "themeToLight": {
+          "$ref": "#/$defs/text"
+        },
+        "themeToLightLabel": {
+          "$ref": "#/$defs/text"
+        },
+        "themeToDark": {
+          "$ref": "#/$defs/text"
+        },
+        "themeToDarkLabel": {
+          "$ref": "#/$defs/text"
+        },
         "present": {
           "$ref": "#/$defs/text"
+        },
+        "skipToContent": {
+          "$ref": "#/$defs/text"
+        },
+        "navLabel": {
+          "$ref": "#/$defs/text"
+        },
+        "coreSkills": {
+          "$ref": "#/$defs/text"
+        },
+        "supportingSkills": {
+          "$ref": "#/$defs/text"
+        },
+        "spokenLanguages": {
+          "$ref": "#/$defs/text"
+        },
+        "contactCta": {
+          "$ref": "#/$defs/text"
+        },
+        "inProgress": {
+          "$ref": "#/$defs/text"
+        },
+        "hours": {
+          "$ref": "#/$defs/text"
+        },
+        "emailLabel": {
+          "$ref": "#/$defs/text"
+        },
+        "footer": {
+          "$ref": "#/$defs/text"
+        },
+        "sections": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "about",
+            "skills",
+            "experience",
+            "education",
+            "certifications",
+            "contact"
+          ],
+          "properties": {
+            "about": {
+              "$ref": "#/$defs/text"
+            },
+            "skills": {
+              "$ref": "#/$defs/text"
+            },
+            "experience": {
+              "$ref": "#/$defs/text"
+            },
+            "education": {
+              "$ref": "#/$defs/text"
+            },
+            "certifications": {
+              "$ref": "#/$defs/text"
+            },
+            "contact": {
+              "$ref": "#/$defs/text"
+            }
+          }
+        }
+      }
+    },
+    "pdfOnly": {
+      "description": "Personal data that appears only in the generated CV PDFs, never on the web page.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "phone"
+      ],
+      "properties": {
+        "phone": {
+          "type": "string",
+          "minLength": 1
         }
       }
     }

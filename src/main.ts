@@ -1,4 +1,5 @@
 import "./style.css";
+import { renderContent } from "./render";
 import {
   applyLocale,
   otherLocale,
@@ -20,7 +21,14 @@ import {
 let locale: Locale = resolveLocale(location.search, readStoredLocale());
 let theme: Theme = resolveTheme(readStoredTheme(), lightQuery().matches);
 
+const content = document.getElementById("content")!;
+
 function render(): void {
+  // The build pre-renders English; only re-render when the Locale differs from what is on screen.
+  if (content.dataset.locale !== locale) {
+    content.innerHTML = renderContent(locale);
+    content.dataset.locale = locale;
+  }
   applyLocale(locale);
   applyTheme(theme, locale);
 }

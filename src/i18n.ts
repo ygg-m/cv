@@ -1,4 +1,4 @@
-import cv from "./content/cv.json";
+import { cv } from "./content";
 
 export const LOCALES = ["en", "pt-BR"] as const;
 export type Locale = (typeof LOCALES)[number];
@@ -53,6 +53,9 @@ export function applyLocale(locale: Locale): void {
   document.documentElement.lang = locale;
   document.querySelectorAll<HTMLElement>("[data-i18n]").forEach((el) => {
     el.textContent = getText(el.dataset.i18n!, locale);
+  });
+  document.querySelectorAll<HTMLElement>("[data-i18n-label]").forEach((el) => {
+    el.setAttribute("aria-label", getText(el.dataset.i18nLabel!, locale));
   });
   document.title = `${cv.profile.name} - ${getText("profile.headline.title", locale)}`;
 

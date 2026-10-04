@@ -45,12 +45,11 @@ describe("Content Source", () => {
     expect(isValid(data)).toBe(false);
   });
 
-  it("TC-CON-07 keeps the phone number only under contact.pdfOnly", () => {
-    const { pdfOnly, ...publicContact } = cv.contact;
-    const publicData = JSON.stringify({ ...cv, contact: publicContact });
+  it("TC-CON-07 keeps the phone number only under the top-level pdfOnly key", () => {
+    const { pdfOnly, ...publicData } = cv;
     expect(pdfOnly.phone).toBeTruthy();
-    expect(publicData).not.toContain(pdfOnly.phone);
-    expect(publicData).not.toMatch(/\+\d{2}\s?\(?\d{2}\)?\s?\d{4,5}-?\d{4}/);
+    expect(JSON.stringify(publicData)).not.toContain(pdfOnly.phone);
+    expect(JSON.stringify(publicData)).not.toMatch(/\+\d{2}\s?\(?\d{2}\)?\s?\d{4,5}-?\d{4}/);
   });
 
   it("TC-CON-08 uses unique ids within each collection", () => {
@@ -62,7 +61,7 @@ describe("Content Source", () => {
 
   it("TC-CON-09 references image files that exist", () => {
     const images = [...cv.experience, ...cv.education, ...cv.devProjects].map((item) => item.image);
-    const missing = images.filter((image) => !existsSync(resolve("src/assets", image)));
+    const missing = images.filter((image) => !existsSync(resolve("public/assets", image)));
     expect(missing).toEqual([]);
   });
 

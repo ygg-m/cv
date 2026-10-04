@@ -3,12 +3,21 @@
   "profile": {
     "name": "Ygor Goulart",
     "headline": {
-      "title": { "en": "QA Tester", "pt-BR": "QA Tester" },
-      "subtitle": { "en": "Test Automation", "pt-BR": "Automação de Testes" }
+      "title": {
+        "en": "QA Tester",
+        "pt-BR": "QA Tester"
+      },
+      "subtitle": {
+        "en": "Test Automation",
+        "pt-BR": "Automação de Testes"
+      }
     },
     "location": {
       "city": "São Paulo",
-      "country": { "en": "Brazil", "pt-BR": "Brasil" }
+      "country": {
+        "en": "Brazil",
+        "pt-BR": "Brasil"
+      }
     },
     "about": {
       "en": "Senior QA Tester testing AAA games across PC, consoles and stores, with a background in IT support and ten years in design. I document and track defects in Jira and TestRail, and I am moving the repetitive work into automation with Playwright and TypeScript. This site is my test subject: every claim on it is backed by an automated check.",
@@ -18,15 +27,17 @@
   "contact": {
     "email": "ygorgm95@gmail.com",
     "linkedin": "https://www.linkedin.com/in/ygorgm/",
-    "github": "https://github.com/ygg-m",
-    "pdfOnly": { "phone": "+55 (11) 95283-1030" }
+    "github": "https://github.com/ygg-m"
   },
   "experience": [
     {
       "id": "side",
       "visibility": "visible",
       "company": "SIDE",
-      "role": { "en": "Senior QA Tester", "pt-BR": "QA Tester Sênior" },
+      "role": {
+        "en": "Senior QA Tester",
+        "pt-BR": "QA Tester Sênior"
+      },
       "start": "2025-12",
       "end": null,
       "image": "career/side.jpg",
@@ -57,7 +68,10 @@
       "id": "acs-pro",
       "visibility": "visible",
       "company": "ACS Pro",
-      "role": { "en": "Bilingual IT Support Analyst", "pt-BR": "Analista de Suporte de TI Bilíngue" },
+      "role": {
+        "en": "Bilingual IT Support Analyst",
+        "pt-BR": "Analista de Suporte de TI Bilíngue"
+      },
       "start": "2025-01",
       "end": "2025-07",
       "image": "career/acs-pro.jpg",
@@ -88,7 +102,10 @@
       "id": "concentrix",
       "visibility": "visible",
       "company": "Concentrix",
-      "role": { "en": "Bilingual IT Support Analyst", "pt-BR": "Analista de Suporte de TI Bilíngue" },
+      "role": {
+        "en": "Bilingual IT Support Analyst",
+        "pt-BR": "Analista de Suporte de TI Bilíngue"
+      },
       "start": "2023-02",
       "end": "2024-02",
       "image": "career/concentrix.jpg",
@@ -111,7 +128,10 @@
       "id": "acsoftware",
       "visibility": "more",
       "company": "ACSoftware",
-      "role": { "en": "BI Agent", "pt-BR": "Agente de BI" },
+      "role": {
+        "en": "BI Agent",
+        "pt-BR": "Agente de BI"
+      },
       "start": "2024-06",
       "end": "2025-01",
       "image": "career/acsoftware.jpg",
@@ -134,7 +154,10 @@
       "id": "pak",
       "visibility": "more",
       "company": "Planned Acts of Kindness",
-      "role": { "en": "Web Developer", "pt-BR": "Desenvolvedor Web" },
+      "role": {
+        "en": "Web Developer",
+        "pt-BR": "Desenvolvedor Web"
+      },
       "start": "2022-11",
       "end": "2024-02",
       "image": "career/pak.jpeg",
@@ -153,7 +176,10 @@
       "id": "ideamaker",
       "visibility": "more",
       "company": "Idea Maker",
-      "role": { "en": "Lead Designer", "pt-BR": "Designer Líder" },
+      "role": {
+        "en": "Lead Designer",
+        "pt-BR": "Designer Líder"
+      },
       "start": "2020-03",
       "end": "2022-10",
       "image": "career/ideamaker.jpg",
@@ -176,7 +202,10 @@
       "id": "liq",
       "visibility": "more",
       "company": "LIQ",
-      "role": { "en": "Bilingual Tech Support", "pt-BR": "Suporte Técnico Bilíngue" },
+      "role": {
+        "en": "Bilingual Tech Support",
+        "pt-BR": "Suporte Técnico Bilíngue"
+      },
       "start": "2017-03",
       "end": "2019-11",
       "image": "career/liq.png",
@@ -199,7 +228,10 @@
       "id": "freelance",
       "visibility": "more",
       "company": "Freelance",
-      "role": { "en": "Designer & Developer", "pt-BR": "Designer e Desenvolvedor" },
+      "role": {
+        "en": "Designer & Developer",
+        "pt-BR": "Designer e Desenvolvedor"
+      },
       "start": "2010",
       "end": null,
       "image": "career/freelance.png",
@@ -217,7 +249,10 @@
       "visibility": "visible",
       "kind": "degree",
       "institution": "Universidade Anhembi Morumbi",
-      "title": { "en": "Bachelor's in Computer Science", "pt-BR": "Bacharelado em Ciência da Computação" },
+      "title": {
+        "en": "Bachelor's in Computer Science",
+        "pt-BR": "Bacharelado em Ciência da Computação"
+      },
       "status": "in-progress",
       "image": "education/anhembimorumbi.jpg"
     },
@@ -225,7 +260,10 @@
       "id": "design-career",
       "visibility": "more",
       "kind": "professional",
-      "institution": { "en": "Professional experience", "pt-BR": "Experiência profissional" },
+      "institution": {
+        "en": "Professional experience",
+        "pt-BR": "Experiência profissional"
+      },
       "title": {
         "en": "10 years in graphic design, UX/UI and visual communication",
         "pt-BR": "10 anos em design gráfico, UX/UI e comunicação visual"
@@ -238,9 +276,17 @@
       "visibility": "more",
       "kind": "course",
       "institution": "Udemy",
-      "title": { "en": "Web development courses", "pt-BR": "Cursos de desenvolvimento web" },
+      "title": {
+        "en": "Web development courses",
+        "pt-BR": "Cursos de desenvolvimento web"
+      },
       "status": "completed",
-      "topics": ["HTML5 / CSS3", "JavaScript", "Node.js", "React"],
+      "topics": [
+        "HTML5 / CSS3",
+        "JavaScript",
+        "Node.js",
+        "React"
+      ],
       "image": "education/udemy.jpg"
     },
     {
@@ -248,9 +294,15 @@
       "visibility": "more",
       "kind": "course",
       "institution": "Curso em Vídeo",
-      "title": { "en": "Web fundamentals", "pt-BR": "Fundamentos da web" },
+      "title": {
+        "en": "Web fundamentals",
+        "pt-BR": "Fundamentos da web"
+      },
       "status": "completed",
-      "topics": ["HTML5 / CSS3", "JavaScript"],
+      "topics": [
+        "HTML5 / CSS3",
+        "JavaScript"
+      ],
       "image": "education/cursoemvideo.png"
     },
     {
@@ -258,29 +310,51 @@
       "visibility": "more",
       "kind": "course",
       "institution": "Scrimba",
-      "title": { "en": "Clean code", "pt-BR": "Código limpo" },
+      "title": {
+        "en": "Clean code",
+        "pt-BR": "Código limpo"
+      },
       "status": "completed",
-      "topics": ["Clean Code"],
+      "topics": [
+        "Clean Code"
+      ],
       "image": "education/scrimba.png"
     },
     {
       "id": "self-taught",
       "visibility": "more",
       "kind": "course",
-      "institution": { "en": "Self-taught", "pt-BR": "Autodidata" },
-      "title": { "en": "Tooling and languages", "pt-BR": "Ferramentas e linguagens" },
+      "institution": {
+        "en": "Self-taught",
+        "pt-BR": "Autodidata"
+      },
+      "title": {
+        "en": "Tooling and languages",
+        "pt-BR": "Ferramentas e linguagens"
+      },
       "status": "completed",
-      "topics": ["TypeScript", "Node.js", "Git", "GitHub"],
+      "topics": [
+        "TypeScript",
+        "Node.js",
+        "Git",
+        "GitHub"
+      ],
       "image": "education/selftaught.jpg"
     }
   ],
   "certifications": [
     {
       "id": "iterasys-qa",
-      "name": { "en": "Quality Assurance (QA) Certification", "pt-BR": "Certificação em Garantia de Qualidade (QA)" },
+      "name": {
+        "en": "Quality Assurance (QA) Certification",
+        "pt-BR": "Certificação em Garantia de Qualidade (QA)"
+      },
       "issuer": "Iterasys",
       "year": "2024",
-      "format": { "en": "Online", "pt-BR": "Online" }
+      "format": {
+        "en": "Online",
+        "pt-BR": "Online"
+      }
     },
     {
       "id": "side-console-titles",
@@ -291,104 +365,362 @@
       "issuer": "SIDE",
       "year": "2026",
       "hours": 112,
-      "format": { "en": "In person", "pt-BR": "Presencial" }
+      "format": {
+        "en": "In person",
+        "pt-BR": "Presencial"
+      }
     }
   ],
   "skills": [
-    { "id": "test-automation", "core": true, "name": { "en": "Test Automation", "pt-BR": "Automação de Testes" }, "items": ["Playwright", "Cypress", "Selenium"] },
-    { "id": "api-testing", "core": true, "name": { "en": "API Testing", "pt-BR": "Testes de API" }, "items": ["Postman"] },
-    { "id": "qa-process", "core": true, "name": { "en": "QA Process", "pt-BR": "Processo de QA" }, "items": ["Jira", "TestRail", "Confluence", "Agile/Scrum"] },
-    { "id": "languages", "core": false, "name": { "en": "Languages", "pt-BR": "Linguagens" }, "items": ["JavaScript", "TypeScript", "Python", "SQL"] },
-    { "id": "frameworks", "core": false, "name": { "en": "Frameworks", "pt-BR": "Frameworks" }, "items": ["Node.js", "React", "Angular", "WordPress"] },
-    { "id": "devops-tools", "core": false, "name": { "en": "DevOps & Tools", "pt-BR": "DevOps e Ferramentas" }, "items": ["Git/GitHub", "Docker", "MySQL", "PostgreSQL", "SQL Server", "MongoDB", "Windows", "Linux"] },
-    { "id": "it-ops", "core": false, "name": { "en": "IT Ops", "pt-BR": "Operações de TI" }, "items": ["ITIL", "ManageEngine", "Zoho Suite", "Active Directory", "Office 365", "Incident Management", "DevOps"] },
-    { "id": "design", "core": false, "name": { "en": "Design", "pt-BR": "Design" }, "items": ["Figma", "Adobe"] }
+    {
+      "id": "test-automation",
+      "core": true,
+      "name": {
+        "en": "Test Automation",
+        "pt-BR": "Automação de Testes"
+      },
+      "items": [
+        "Playwright",
+        "Cypress",
+        "Selenium"
+      ]
+    },
+    {
+      "id": "api-testing",
+      "core": true,
+      "name": {
+        "en": "API Testing",
+        "pt-BR": "Testes de API"
+      },
+      "items": [
+        "Postman"
+      ]
+    },
+    {
+      "id": "qa-process",
+      "core": true,
+      "name": {
+        "en": "QA Process",
+        "pt-BR": "Processo de QA"
+      },
+      "items": [
+        "Jira",
+        "TestRail",
+        "Confluence",
+        "Agile/Scrum"
+      ]
+    },
+    {
+      "id": "languages",
+      "core": false,
+      "name": {
+        "en": "Languages",
+        "pt-BR": "Linguagens"
+      },
+      "items": [
+        "JavaScript",
+        "TypeScript",
+        "Python",
+        "SQL"
+      ]
+    },
+    {
+      "id": "frameworks",
+      "core": false,
+      "name": {
+        "en": "Frameworks",
+        "pt-BR": "Frameworks"
+      },
+      "items": [
+        "Node.js",
+        "React",
+        "Angular",
+        "WordPress"
+      ]
+    },
+    {
+      "id": "devops-tools",
+      "core": false,
+      "name": {
+        "en": "DevOps & Tools",
+        "pt-BR": "DevOps e Ferramentas"
+      },
+      "items": [
+        "Git/GitHub",
+        "Docker",
+        "MySQL",
+        "PostgreSQL",
+        "SQL Server",
+        "MongoDB",
+        "Windows",
+        "Linux"
+      ]
+    },
+    {
+      "id": "it-ops",
+      "core": false,
+      "name": {
+        "en": "IT Ops",
+        "pt-BR": "Operações de TI"
+      },
+      "items": [
+        "ITIL",
+        "ManageEngine",
+        "Zoho Suite",
+        "Active Directory",
+        "Office 365",
+        "Incident Management",
+        "DevOps"
+      ]
+    },
+    {
+      "id": "design",
+      "core": false,
+      "name": {
+        "en": "Design",
+        "pt-BR": "Design"
+      },
+      "items": [
+        "Figma",
+        "Adobe"
+      ]
+    }
   ],
   "spokenLanguages": [
-    { "name": { "en": "Portuguese", "pt-BR": "Português" }, "level": { "en": "Native", "pt-BR": "Nativo" } },
-    { "name": { "en": "English", "pt-BR": "Inglês" }, "level": { "en": "Fluent (professional proficiency)", "pt-BR": "Fluente (proficiência profissional)" } }
+    {
+      "name": {
+        "en": "Portuguese",
+        "pt-BR": "Português"
+      },
+      "level": {
+        "en": "Native",
+        "pt-BR": "Nativo"
+      }
+    },
+    {
+      "name": {
+        "en": "English",
+        "pt-BR": "Inglês"
+      },
+      "level": {
+        "en": "Fluent (professional proficiency)",
+        "pt-BR": "Fluente (proficiência profissional)"
+      }
+    }
   ],
   "devProjects": [
     {
       "id": "angular-todo",
-      "name": { "en": "Angular To-Do with Authentication", "pt-BR": "To-Do em Angular com Autenticação" },
+      "name": {
+        "en": "Angular To-Do with Authentication",
+        "pt-BR": "To-Do em Angular com Autenticação"
+      },
       "description": {
         "en": "To-do app with authentication using Angular 17 and Firebase.",
         "pt-BR": "Aplicativo de tarefas com autenticação usando Angular 17 e Firebase."
       },
-      "tags": ["Angular", "TypeScript", "Firebase", "Tailwind CSS"],
+      "tags": [
+        "Angular",
+        "TypeScript",
+        "Firebase",
+        "Tailwind CSS"
+      ],
       "github": "https://github.com/ygg-m/angular-todo",
       "live": "https://ygg-todo.web.app/",
       "image": "projects/angular-todo.png"
     },
     {
       "id": "fg-input-translator",
-      "name": { "en": "Fight Game Input Translator", "pt-BR": "Tradutor de Inputs de Jogos de Luta" },
+      "name": {
+        "en": "Fight Game Input Translator",
+        "pt-BR": "Tradutor de Inputs de Jogos de Luta"
+      },
       "description": {
         "en": "App that converts numeral inputs into visual inputs.",
         "pt-BR": "Aplicativo que converte inputs numéricos em inputs visuais."
       },
-      "tags": ["React", "JavaScript", "Tailwind CSS", "React Router"],
+      "tags": [
+        "React",
+        "JavaScript",
+        "Tailwind CSS",
+        "React Router"
+      ],
       "github": "https://github.com/ygg-m/fg-input-translator",
       "live": "https://ygg-m.github.io/fg-input-translator/",
       "image": "projects/fginputtranslator.png"
     },
     {
       "id": "js-pokedex",
-      "name": { "en": "Pokédex", "pt-BR": "Pokédex" },
+      "name": {
+        "en": "Pokédex",
+        "pt-BR": "Pokédex"
+      },
       "description": {
         "en": "Gets data from PokéAPI to create a dynamic Pokédex.",
         "pt-BR": "Obtém dados da PokéAPI para criar uma Pokédex dinâmica."
       },
-      "tags": ["JavaScript", "HTML", "CSS"],
+      "tags": [
+        "JavaScript",
+        "HTML",
+        "CSS"
+      ],
       "github": "https://github.com/ygg-m/js-pokedex",
       "live": "https://ygg-m.github.io/js-pokedex/",
       "image": "projects/jspokedex.png"
     },
     {
       "id": "to-do-app",
-      "name": { "en": "To-Do App", "pt-BR": "Aplicativo To-Do" },
+      "name": {
+        "en": "To-Do App",
+        "pt-BR": "Aplicativo To-Do"
+      },
       "description": {
         "en": "Simple to-do app to track your goals.",
         "pt-BR": "Aplicativo simples de tarefas para acompanhar seus objetivos."
       },
-      "tags": ["JavaScript", "HTML", "CSS"],
+      "tags": [
+        "JavaScript",
+        "HTML",
+        "CSS"
+      ],
       "github": "https://github.com/ygg-m/to-do-app",
       "live": "https://ygg-m.github.io/to-do-app/",
       "image": "projects/todo.png"
     },
     {
       "id": "angular-blog",
-      "name": { "en": "Angular Blog", "pt-BR": "Blog em Angular" },
+      "name": {
+        "en": "Angular Blog",
+        "pt-BR": "Blog em Angular"
+      },
       "description": {
         "en": "Practice project built in Angular to learn the framework.",
         "pt-BR": "Projeto de prática feito em Angular para aprender o framework."
       },
-      "tags": ["Angular", "TypeScript"],
+      "tags": [
+        "Angular",
+        "TypeScript"
+      ],
       "github": "https://github.com/ygg-m/angular-blog",
       "live": "https://ygg-m.github.io/angular-blog/",
       "image": "projects/angularblog.png"
     },
     {
       "id": "angular-buzzfeed",
-      "name": { "en": "Angular Buzzfeed", "pt-BR": "Buzzfeed em Angular" },
+      "name": {
+        "en": "Angular Buzzfeed",
+        "pt-BR": "Buzzfeed em Angular"
+      },
       "description": {
         "en": "Practice project built in Angular to learn the framework.",
         "pt-BR": "Projeto de prática feito em Angular para aprender o framework."
       },
-      "tags": ["Angular", "TypeScript"],
+      "tags": [
+        "Angular",
+        "TypeScript"
+      ],
       "github": "https://github.com/ygg-m/angular-buzzfeed",
       "live": "https://angular-buzzfeed.netlify.app/",
       "image": "projects/angularbuzzfeed.png"
     }
   ],
   "ui": {
-    "localeToggle": { "en": "Português", "pt-BR": "English" },
-    "localeToggleLabel": { "en": "Switch language to Portuguese", "pt-BR": "Mudar idioma para inglês" },
-    "themeToLight": { "en": "Light", "pt-BR": "Claro" },
-    "themeToLightLabel": { "en": "Switch to light theme", "pt-BR": "Mudar para o tema claro" },
-    "themeToDark": { "en": "Dark", "pt-BR": "Escuro" },
-    "themeToDarkLabel": { "en": "Switch to dark theme", "pt-BR": "Mudar para o tema escuro" },
-    "present": { "en": "Present", "pt-BR": "Atualmente" }
+    "localeToggle": {
+      "en": "Português",
+      "pt-BR": "English"
+    },
+    "localeToggleLabel": {
+      "en": "Switch language to Portuguese",
+      "pt-BR": "Mudar idioma para inglês"
+    },
+    "themeToLight": {
+      "en": "Light",
+      "pt-BR": "Claro"
+    },
+    "themeToLightLabel": {
+      "en": "Switch to light theme",
+      "pt-BR": "Mudar para o tema claro"
+    },
+    "themeToDark": {
+      "en": "Dark",
+      "pt-BR": "Escuro"
+    },
+    "themeToDarkLabel": {
+      "en": "Switch to dark theme",
+      "pt-BR": "Mudar para o tema escuro"
+    },
+    "present": {
+      "en": "Present",
+      "pt-BR": "Atualmente"
+    },
+    "skipToContent": {
+      "en": "Skip to content",
+      "pt-BR": "Pular para o conteúdo"
+    },
+    "navLabel": {
+      "en": "Sections",
+      "pt-BR": "Seções"
+    },
+    "sections": {
+      "about": {
+        "en": "About",
+        "pt-BR": "Sobre"
+      },
+      "skills": {
+        "en": "Skills",
+        "pt-BR": "Habilidades"
+      },
+      "experience": {
+        "en": "Experience",
+        "pt-BR": "Experiência"
+      },
+      "education": {
+        "en": "Education",
+        "pt-BR": "Educação"
+      },
+      "certifications": {
+        "en": "Certifications",
+        "pt-BR": "Certificações"
+      },
+      "contact": {
+        "en": "Contact",
+        "pt-BR": "Contato"
+      }
+    },
+    "coreSkills": {
+      "en": "Core skills",
+      "pt-BR": "Habilidades principais"
+    },
+    "supportingSkills": {
+      "en": "Supporting skills",
+      "pt-BR": "Habilidades complementares"
+    },
+    "spokenLanguages": {
+      "en": "Spoken languages",
+      "pt-BR": "Idiomas"
+    },
+    "contactCta": {
+      "en": "Get in touch",
+      "pt-BR": "Entre em contato"
+    },
+    "inProgress": {
+      "en": "In progress",
+      "pt-BR": "Em andamento"
+    },
+    "hours": {
+      "en": "hours",
+      "pt-BR": "horas"
+    },
+    "emailLabel": {
+      "en": "Email",
+      "pt-BR": "E-mail"
+    },
+    "footer": {
+      "en": "Built and tested by Ygor Goulart",
+      "pt-BR": "Criado e testado por Ygor Goulart"
+    }
+  },
+  "pdfOnly": {
+    "phone": "+55 (11) 95283-1030"
   }
 }

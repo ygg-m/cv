@@ -19,19 +19,26 @@
     </script>
   </head>
   <body>
-    <header>
-      <button id="theme-toggle" class="toggle" type="button" aria-label="Switch to light theme">
-        Light
-      </button>
-      <button id="locale-toggle" class="toggle" type="button" aria-label="Switch language to Portuguese">
-        <span lang="pt-BR">Português</span>
-      </button>
+    <a class="skip-link" href="#main" data-i18n="ui.skipToContent">Skip to content</a>
+    <header class="site-header">
+      <nav aria-label="Sections" data-i18n-label="ui.navLabel">
+        <a href="#about" data-i18n="ui.sections.about">About</a>
+        <a href="#skills" data-i18n="ui.sections.skills">Skills</a>
+        <a href="#experience" data-i18n="ui.sections.experience">Experience</a>
+        <a href="#education" data-i18n="ui.sections.education">Education</a>
+        <a href="#certifications" data-i18n="ui.sections.certifications">Certifications</a>
+        <a href="#contact" data-i18n="ui.sections.contact">Contact</a>
+      </nav>
+      <div class="toggles">
+        <button id="theme-toggle" class="toggle" type="button" aria-label="Switch to light theme">
+          Light
+        </button>
+        <button id="locale-toggle" class="toggle" type="button" aria-label="Switch language to Portuguese">
+          <span lang="pt-BR">Português</span>
+        </button>
+      </div>
     </header>
-    <main>
-      <h1>Ygor Goulart</h1>
-      <p id="headline" data-i18n="profile.headline.title">QA Tester</p>
-      <p id="subtitle" data-i18n="profile.headline.subtitle">Test Automation</p>
-    </main>
+    <div id="content" data-locale="en"><!--prerender--></div>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>

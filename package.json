@@ -5,13 +5,13 @@
   "type": "module",
   "description": "Bilingual QA Tester CV and the system under test of a QA portfolio",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --configLoader runner",
     "prebuild": "npm run test:unit",
-    "build": "tsc --noEmit && vite build",
-    "preview": "vite preview --port 4173 --strictPort",
+    "build": "tsc --noEmit && vite build --configLoader runner",
+    "preview": "vite preview --configLoader runner --port 4173 --strictPort",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
-    "test:unit": "vitest run",
+    "test:unit": "vitest run --configLoader runner",
     "test:e2e": "playwright test"
   },
   "devDependencies": {
