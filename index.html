@@ -1,374 +1,59 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <!-- meta -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- social media -->
-    <meta property="og:title" content="Ygor Goulart">
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ygor Goulart - QA Tester</title>
+    <meta
+      name="description"
+      content="Ygor Goulart, QA Tester focused on test automation: AAA game QA, Playwright and TypeScript, and a CV that tests itself."
+    />
+    <meta name="color-scheme" content="dark light" />
+    <link rel="canonical" href="https://ygg-m.github.io/cv/" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta property="og:type" content="website" />
-    <meta property="og:description" content="Designer & Developer who's good at drawing something and make it work.">
-    <meta property="og:image" content="images/thumbnail.jpg">
-    <meta property="og:url" content="https://ygglart.github.io/cv/">
-    <meta name="twitter:card" content="summary_large_image">
-
-    <!-- page title -->
-    <title>Ygor Goulart, Designer & Developer</title>
-
-    <!-- css :: main --> <link rel="stylesheet" href="styles/main.css">
-    <!-- css :: navbar  --> <link rel="stylesheet" href="styles/navbar.css">
-    <!-- css :: header --> <link rel="stylesheet" href="styles/header.css">
-    <!-- css :: profile --> <link rel="stylesheet" href="styles/profile.css">
-    <!-- css :: career --> <link rel="stylesheet" href="styles/career.css">
-    <!-- css :: education --> <link rel="stylesheet" href="styles/education.css">
-    <!-- css :: pojects --> <link rel="stylesheet" href="styles/projects.css">
-    <!-- css :: footer --> <link rel="stylesheet" href="styles/footer.css">
-
-    <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="images/favicon/site.webmanifest">
-
-    <!-- google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-
-    <!-- font awesome -->
-    <script src="https://kit.fontawesome.com/64de45cbba.js" crossorigin="anonymous"></script>
-
-    <!-- ionicon -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>         
-
-</head>
-
-<body>
-    <!-- navbar :: start-->
-    <nav class="navbar">
-        <span class="main-logo"><a href="#">YG</a></span>
-
-        <div class="nav-links">
-                 <a href="#profile">profile</a>
-                <a href="#career">experiences</a>
-                <a href="#projects">projects</a>
-                <a href="#contact">contact</a>
-                <a href="https://drive.google.com/file/d/1RzGSDxmu0zRS069QGN96Ian1QmeWG0dC/view?usp=share_link" class="resume">resume</a>
-        </div>
-
-        <div class="menu-icon" onclick="responsiveMenu()"><i class="fa-solid fa-bars"></i></div>
-    </nav>
-    <!-- navbar :: end -->
-
-    <!-- header :: start -->
-    <section id="header">
-        <div class="header">
-            <h3>hi! i'm</h3>
-            <h1>ygor<span>goulart</span></h1>
-            <hr>
-            <h3>Designer & Developer</h3>
-            <a href="#projects">see my projects</a>
-        </div>
-    </section>
-    <!-- header :: end -->
-
-    <!-- profile :: start -->
-    <section id="profile">
-        <div class="profile">
-            <!-- info -->
-            <div class="info-container">
-                <div class="info">
-                    <div class="title fw-300">
-                        <p>name</p>
-                        <p>age</p>
-                        <p>location</p>
-                    </div>
-                    <div class="content">
-                        <p class="clr-primary">ygor goulart</p>
-                        <p>26 years</p>
-                        <p>são paulo, brazil</p>
-                    </div>
-                </div>
-
-                <!-- quote -->
-                <div class="quote">
-                    <p>"<span class="clr-primary fw-600">Designer</span> by heart, <span
-                            class="clr-primary fw-600">Developer</span> by choice."</p>
-                </div>
-
-                <!-- skills -->
-                <div class="skill-big-container">
-
-                    <div class="skill-container">
-                        <ion-icon name="brush-outline" class="skill-icon"></ion-icon></i>
-                        <div class="skills">
-                            <span class="skill">ui/ux</span>
-                            <span class="skill">design system</span>
-                            <span class="skill">web design</span>
-                            <span class="skill">mobile design</span>
-                            <span class="skill">wireframing</span>
-                            <span class="skill">prototyping</span>
-                            <span class="skill">testing</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-container">
-                        <ion-icon name="code-slash-outline" class="skill-icon"></ion-icon></i>
-                        <div class="skills">
-                            <span class="skill">html</span>
-                            <span class="skill">css</span>
-                            <span class="skill">javascript</span>
-                            <span class="skill">jquery</span>
-                            <span class="skill">bootstrap</span>
-                            <span class="skill">node</span>
-                            <span class="skill">web3</span>
-                            <span class="skill">react</span>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-
-            <!-- image -->
-            <div class="image">
-            </div>
-        </div>
-    </section>
-    <!-- profile :: end -->
-
-
-
-    <!-- career :: start -->
-    <section id="career">
-        <div class="container">
-            <!-- title -->
-            <h2>career</h2>
-
-            <!-- jobs container -->
-            <div class="info-box-container">
-
-
-                <div class="info-box">
-                    <div class="img-info"><img src="images/career/freelance.png" alt="">
-                        <div class="info-box-description">
-                            <p class="clr-primary fw-600 ltr-space-2">freelance</p>
-                            <p>designer & developer</p>
-                            <p class="opacity-5">10+ years</p>
-                        </div>
-                    </div>
-                    <ion-icon name="menu-outline"></ion-icon>
-                    <div class="info-box-more">
-                        <p>When I have time, I like to take some freelance job as a Designer. I have experiences developing websites, apps, marketing pieces, vector illustrations, printables and product design.</p>
-                        <a class="btn-off" href="#contact">not available</a>
-                    </div>
-                </div>
-
-                <div class="info-box">
-                    <!-- job image -->
-                    <div class="img-info"><img src="images/career/finby.jpg" alt="">
-                        <!-- job info -->
-                        <div class="info-box-description">
-                            <p class="clr-primary fw-600 ltr-space-2">finby</p>
-                            <p>ui/ux designer</p>
-                            <p class="opacity-5">2 months</p>
-                        </div>
-                    </div>
-                    <!-- burger icon -->
-                    <ion-icon name="menu-outline"></ion-icon>
-                    <!-- info pop-up -->
-                    <div class="info-box-more">
-                        <p>Concept design, wireframe and prototype of Finby internal and external websites. Support to Marketing Team with marketing pieces, presentations and overral design tips.</p>
-                        <a class="btn-primary" href="https://finby.io/">website</a>
-                    </div>
-                </div>
-
-                <div class="info-box">
-                    <div class="img-info"><img src="images/career/ideamaker.jpg" alt="">
-                        <div class="info-box-description">
-                            <p class="clr-primary fw-600 ltr-space-2">idea maker</p>
-                            <p>lead designer</p>
-                            <p class="opacity-5">2 years</p>
-                        </div>
-                    </div>
-                    <ion-icon name="menu-outline"></ion-icon>
-                    <div class="info-box-more">
-                        <p>Lead a 5 people team of designers. Created concepts, wireframes, mockups, presentations, created websites and apps like ideamaker.com and Apcap da Sorte.</p>
-                        <a class="btn-primary" href="https://ideamaker.com.br/">website</a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <!-- career :: end -->
-
-    <!-- education :: start -->
-    <section id="education">
-        <h2>education</h2>
-
-        <!-- degrees -->
-        <div class="info-box-container college">
-            <div class="info-box">
-                <div class="img-info">
-                    <img src="images/education/anhembimorumbi.jpg" alt="">
-                    <div class="info-box-description">
-                        <p>anhembi morumbi</p>
-                        <p class="clr-primary fw-600 ltr-space-2">system analysis & development</p>
-                        <p class="opacity-5">2023</p>
-                    </div>
-                </div>
-            </div>
-
-                <div class="info-box">
-                    <div class="img-info">
-                        <img src="images/education/anhembimorumbi.jpg" alt="">
-                        <div class="info-box-description">
-                            <p>anhembi morumbi</p>
-                            <p class="clr-primary fw-600 ltr-space-2">graphic design</p>
-                            <p class="opacity-5">2017</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        <!-- courses -->
-        <div class="info-box-container course">
-
-            <div class="info-box course">
-                <div class="img-info"><img src="images/education/udemy.jpg" alt="">
-                    <div class="info-box-description">
-                        <p class="clr-light ltr-space-2">udemy</p>
-                    </div>
-                </div>
-                <div class="info-box-more">
-                    <ul>
-                        <li>html5/css3 <span class="date">2020 <i class="fa-solid fa-check"></i></span></li>
-                        <li>javascript <span class="date">2021 <i class="fa-solid fa-check"></i></span></li>
-                        <li>bootstrap <span class="date">2022 <i class="fa-solid fa-check"></i></span></li>
-                        <li>jquery <span class="date">2022 <i class="fa-solid fa-check"></i></span></li>
-                        <li>node.js <span class="date">2022 <i class="fa-solid fa-check"></i></span></li>
-                        <li>react <span class="date">2022 <i class="fa-solid fa-check"></i></span></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="info-box course">
-                <div class="img-info"><img src="images/education/cursoemvideo.png" alt="">
-                    <div class="info-box-description">
-                        <p class="clr-light ltr-space-2">curso em video</p>
-                    </div>
-                </div>
-                <div class="info-box-more">
-                    <ul>
-                        <li>html5/css3 <span class="date">2019 <i class="fa-solid fa-check"></i></span></li>
-                        <li>javascript <span class="date">2020 <i class="fa-solid fa-check"></i></span></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="info-box course">
-                <div class="img-info"><img src="images/education/scrimba.png" alt="">
-                    <div class="info-box-description">
-                        <p class="clr-light ltr-space-2">scrimba</p>
-                    </div>
-                </div>
-                <div class="info-box-more">
-                    <ul>
-                        <li>html5/css3 <span class="date">2020 <i class="fa-solid fa-check"></i></span></li>
-                        <li>javascript <span class="date">2021 <i class="fa-solid fa-check"></i></span></li>
-                        <li>clean code <span class="date">2021 <i class="fa-solid fa-check"></i></span></li>
-                    </ul>
-                </div>
-            </div>
-
-        </div>
-    </section>
-    <!-- education :: end -->
-
-    <!-- project :: start -->
-    <section id="projects">
-        <div class="flex col">
-            <h2>projects</h2>
-
-            <div class="projects flex wrap gap-1 j-space-around">
-
-                <div class="project">
-                    <img src="images/projects/game-on.jpg" alt="">
-                    <div class="cover-info flex col">
-                        <ion-icon class="main-icon" name="game-controller-outline"></ion-icon>
-                        <h4>Game-On</h4>
-                        <a class="btn-primary" href="https://www.behance.net/gallery/140523247/Game-On-Project">see it on behance <ion-icon name="logo-behance"></ion-icon> </a>
-                        <a class="btn-primary" href="https://github.com/YggLart/game-on">see it on github <ion-icon name="logo-github"></ion-icon> </a>
-                        <p>Mockup App made with Figma. Website made using Boostrap.</p>
-                        <div class="skills">
-                            <span class="skill">figma</span>
-                            <span class="skill">html</span>
-                            <span class="skill">css</span>
-                            <span class="skill">bootstrap</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project">
-                    <img src="images/projects/spacetravel.jpg" alt="">
-                    <div class="cover-info flex col">
-                        <ion-icon class="main-icon" name="rocket-outline"></ion-icon>
-                        <h4>Space Travel</h4>
-                        <a class="btn-primary" href="https://github.com/YggLart/spacetravel">see it on github <ion-icon name="logo-github"></ion-icon> </a>
-                        <p>Challenge project from Frontend Mentor.</p>
-                        <div class="skills">
-                            <span class="skill">html</span>
-                            <span class="skill">css</span>
-                            <span class="skill">javascript</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project">
-                    <img src="images/projects/poringclicker.jpg" alt="">
-                    <div class="cover-info flex col">
-                        <ion-icon class="main-icon" name="dice-outline"></ion-icon>
-                        <h4>Poring Clicker</h4>
-                        <a class="btn-primary" href="https://www.behance.net/gallery/142025411/Poring-Clicker">see it on behance <ion-icon name="logo-behance"></ion-icon> </a>
-                        <a class="btn-primary" href="https://ygglart.github.io/poring-clicker/">see it on github <ion-icon name="logo-github"></ion-icon> </a>
-                        <p>Clicker Game made using Javascript. Based no Ragnarök Online.</p>
-                        <div class="skills">
-                            <span class="skill">figma</span>
-                            <span class="skill">html</span>
-                            <span class="skill">css</span>
-                            <span class="skill">javascript</span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <!-- project :: end -->
-    
-    <!-- footer :: start -->
-    <section id="contact">
-            <div class="flex col">
-                <a class="mail uppercase" href="mailto:ygorgm95@gmail.com"><span class="fw-700">ygorgm95</span>@gmail.com</a>
-                <a class="phone" href="https://api.whatsapp.com/send?phone=5511952831030"><ion-icon name="logo-whatsapp"></ion-icon> +55 (11) <span class="fw-700">9 5283 1030</span></a>
-            </div>
-            <a class="main-logo uppercase" href="#">yg</a>
-            <div class="flex row j-center">
-                <a class="social" href="https://github.com/YggLart"><ion-icon name="logo-github"></ion-icon></a>
-                <a class="social" href="https://www.instagram.com/ygg.art_/"><ion-icon name="logo-instagram"></ion-icon></a>
-                <a class="social" href="https://www.linkedin.com/in/ygorgm/"><ion-icon name="logo-linkedin"></ion-icon></a>
-            </div>
-    </section>
-
-    <!-- footer :: end -->
-
-    <script src="main.js"></script>
-
-</body>
-
+    <meta property="og:title" content="Ygor Goulart - QA Tester" />
+    <meta
+      property="og:description"
+      content="Ygor Goulart, QA Tester focused on test automation: AAA game QA, Playwright and TypeScript, and a CV that tests itself."
+    />
+    <meta property="og:url" content="https://ygg-m.github.io/cv/" />
+    <!-- Blocking on purpose: sets the Theme before first paint (no flash). Keep in sync with
+         resolveTheme() in src/theme.ts; tests/unit/theme.spec.ts checks they agree. -->
+    <script>
+      (function () {
+        var stored = null;
+        try {
+          stored = localStorage.getItem("theme");
+        } catch (e) {}
+        var light = window.matchMedia("(prefers-color-scheme: light)").matches;
+        document.documentElement.dataset.theme =
+          stored === "dark" || stored === "light" ? stored : light ? "light" : "dark";
+      })();
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main" data-i18n="ui.skipToContent">Skip to content</a>
+    <header class="site-header">
+      <nav aria-label="Sections" data-i18n-label="ui.navLabel">
+        <a href="#about" data-i18n="ui.sections.about">About</a>
+        <a href="#skills" data-i18n="ui.sections.skills">Skills</a>
+        <a href="#experience" data-i18n="ui.sections.experience">Experience</a>
+        <a href="#education" data-i18n="ui.sections.education">Education</a>
+        <a href="#certifications" data-i18n="ui.sections.certifications">Certifications</a>
+        <a href="#testing" data-i18n="ui.sections.testing">Testing</a>
+        <a href="#contact" data-i18n="ui.sections.contact">Contact</a>
+      </nav>
+      <div class="toggles">
+        <button id="theme-toggle" class="toggle" type="button" aria-label="Switch to light theme">
+          Light
+        </button>
+        <button id="locale-toggle" class="toggle" type="button" aria-label="Switch language to Portuguese">
+          <span lang="pt-BR">Português</span>
+        </button>
+      </div>
+    </header>
+    <div id="content" data-locale="en"><!--prerender--></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
 </html>

@@ -1,0 +1,888 @@
+{
+  "$schema": "./cv.schema.json",
+  "profile": {
+    "name": "Ygor Goulart",
+    "headline": {
+      "title": {
+        "en": "QA Tester",
+        "pt-BR": "QA Tester"
+      },
+      "subtitle": {
+        "en": "Test Automation",
+        "pt-BR": "Automação de Testes"
+      }
+    },
+    "location": {
+      "city": "São Paulo",
+      "country": {
+        "en": "Brazil",
+        "pt-BR": "Brasil"
+      }
+    },
+    "about": {
+      "en": "Senior QA Tester testing AAA games across PC, consoles and stores, with a background in IT support and ten years in design. I document and track defects in Jira and TestRail, and I am moving the repetitive work into automation with Playwright and TypeScript. This site is my test subject: every claim on it is backed by an automated check.",
+      "pt-BR": "QA Tester Sênior testando jogos AAA em PC, consoles e lojas, com experiência em suporte de TI e dez anos em design. Documento e rastreio defeitos no Jira e no TestRail e estou levando o trabalho repetitivo para a automação com Playwright e TypeScript. Este site é meu objeto de teste: cada afirmação nele é sustentada por uma verificação automatizada."
+    },
+    "description": {
+      "en": "Ygor Goulart, QA Tester focused on test automation: AAA game QA, Playwright and TypeScript, and a CV that tests itself.",
+      "pt-BR": "Ygor Goulart, QA Tester com foco em automação de testes: QA de jogos AAA, Playwright e TypeScript, e um currículo que testa a si mesmo."
+    }
+  },
+  "contact": {
+    "email": "ygorgm95@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/ygorgm/",
+    "github": "https://github.com/ygg-m"
+  },
+  "experience": [
+    {
+      "id": "side",
+      "visibility": "visible",
+      "company": "SIDE",
+      "role": {
+        "en": "Senior QA Tester",
+        "pt-BR": "QA Tester Sênior"
+      },
+      "start": "2025-12",
+      "end": null,
+      "image": "career/side.jpg",
+      "highlights": [
+        {
+          "en": "Test multiple AAA titles across PC, Steam, PlayStation, Xbox, and Nintendo Switch 2.",
+          "pt-BR": "Testar múltiplos títulos AAA em PC, Steam, PlayStation, Xbox e Nintendo Switch 2."
+        },
+        {
+          "en": "Use Jira and TestRail to document, track, and manage defects through the full lifecycle.",
+          "pt-BR": "Usar Jira e TestRail para documentar, rastrear e gerenciar defeitos durante todo o ciclo de vida."
+        },
+        {
+          "en": "Execute exploratory, smoke, and regression tests to validate stability and functionality.",
+          "pt-BR": "Executar testes exploratórios, de fumaça e de regressão para validar estabilidade e funcionalidade."
+        },
+        {
+          "en": "Identify game-breaking bugs, reproduction steps, and platform-specific issues under certification standards.",
+          "pt-BR": "Identificar bugs que quebram o jogo, passos de reprodução e problemas específicos de plataforma sob padrões de certificação."
+        },
+        {
+          "en": "Collaborate with dev/QA teams to verify fixes and ensure a seamless player experience across hardware.",
+          "pt-BR": "Colaborar com equipes de desenvolvimento/QA para verificar correções e garantir uma experiência do jogador fluida em diferentes hardwares."
+        }
+      ]
+    },
+    {
+      "id": "acs-pro",
+      "visibility": "visible",
+      "company": "ACS Pro",
+      "role": {
+        "en": "Bilingual IT Support Analyst",
+        "pt-BR": "Analista de Suporte de TI Bilíngue"
+      },
+      "start": "2025-01",
+      "end": "2025-07",
+      "image": "career/acs-pro.jpg",
+      "highlights": [
+        {
+          "en": "Administer ManageEngine CRM tools, including configuration, custom workflows, and module customization.",
+          "pt-BR": "Administrar ferramentas de CRM ManageEngine, incluindo configuração, fluxos de trabalho personalizados e personalização de módulos."
+        },
+        {
+          "en": "Provide Tier 1/Tier 2 support, troubleshooting synchronization, data, API, and performance issues.",
+          "pt-BR": "Prestar suporte Nível 1/Nível 2, solucionando problemas de sincronização, dados, API e desempenho."
+        },
+        {
+          "en": "Manage users, roles, and access controls; perform database maintenance and system health checks.",
+          "pt-BR": "Gerenciar usuários, funções e controles de acesso; realizar manutenção de banco de dados e verificações de integridade do sistema."
+        },
+        {
+          "en": "Create technical documentation, user guides, and training to improve CRM adoption.",
+          "pt-BR": "Criar documentação técnica, guias do usuário e treinamentos para melhorar a adoção do CRM."
+        },
+        {
+          "en": "Translate business needs into CRM solutions and collaborate with teams to ensure system efficiency.",
+          "pt-BR": "Traduzir necessidades de negócio em soluções de CRM e colaborar com equipes para garantir a eficiência do sistema."
+        }
+      ]
+    },
+    {
+      "id": "concentrix",
+      "visibility": "visible",
+      "company": "Concentrix",
+      "role": {
+        "en": "Bilingual IT Support Analyst",
+        "pt-BR": "Analista de Suporte de TI Bilíngue"
+      },
+      "start": "2023-02",
+      "end": "2024-02",
+      "image": "career/concentrix.jpg",
+      "highlights": [
+        {
+          "en": "Tier 1/Tier 2 technical support for critical international banking systems and applications.",
+          "pt-BR": "Suporte técnico N1/N2 para sistemas e aplicativos críticos de bancos internacionais."
+        },
+        {
+          "en": "Used Jira and other tools to plan, track, and prioritize IT tasks efficiently.",
+          "pt-BR": "Usei Jira e outras ferramentas para planejar, rastrear e priorizar tarefas de TI com eficiência."
+        },
+        {
+          "en": "Monitored task progress, dependencies, and blockers to maintain operational efficiency.",
+          "pt-BR": "Monitorei o andamento das tarefas, dependências e bloqueios para manter a eficiência operacional."
+        }
+      ]
+    },
+    {
+      "id": "acsoftware",
+      "visibility": "more",
+      "company": "ACSoftware",
+      "role": {
+        "en": "BI Agent",
+        "pt-BR": "Agente de BI"
+      },
+      "start": "2024-06",
+      "end": "2025-01",
+      "image": "career/acsoftware.jpg",
+      "highlights": [
+        {
+          "en": "Transitioned from Customer Support to BI, using product and customer knowledge to drive data-informed decisions.",
+          "pt-BR": "Transição de Suporte ao Cliente para BI, usando conhecimento de produto e cliente para apoiar decisões baseadas em dados."
+        },
+        {
+          "en": "Analyzed and monitored KPIs for IT management software; built executive dashboards on usage, satisfaction, and market trends.",
+          "pt-BR": "Analisei e monitorei KPIs de software de gestão de TI; construí dashboards executivos sobre uso, satisfação e tendências de mercado."
+        },
+        {
+          "en": "Partnered with development on data collection strategies and supported sales with data-backed prospect insights.",
+          "pt-BR": "Atuei com o desenvolvimento em estratégias de coleta de dados e apoiei vendas com insights de prospects baseados em dados."
+        }
+      ]
+    },
+    {
+      "id": "pak",
+      "visibility": "more",
+      "company": "Planned Acts of Kindness",
+      "role": {
+        "en": "Web Developer",
+        "pt-BR": "Desenvolvedor Web"
+      },
+      "start": "2022-11",
+      "end": "2024-02",
+      "image": "career/pak.jpeg",
+      "highlights": [
+        {
+          "en": "Developed WordPress pages to expand the organization's global reach.",
+          "pt-BR": "Desenvolvi páginas em WordPress para ampliar o alcance global da organização."
+        },
+        {
+          "en": "Delivered accessible content that showcased the organization's initiatives and inspired engagement.",
+          "pt-BR": "Entreguei conteúdo acessível que apresentou as iniciativas da organização e incentivou o engajamento."
+        }
+      ]
+    },
+    {
+      "id": "ideamaker",
+      "visibility": "more",
+      "company": "Idea Maker",
+      "role": {
+        "en": "Lead Designer",
+        "pt-BR": "Designer Líder"
+      },
+      "start": "2020-03",
+      "end": "2022-10",
+      "image": "career/ideamaker.jpg",
+      "highlights": [
+        {
+          "en": "Consolidated a new company identity that improved external perception with clients.",
+          "pt-BR": "Consolidei uma nova identidade da empresa que melhorou a percepção externa entre os clientes."
+        },
+        {
+          "en": "Designed mobile applications reaching 10k+ weekly views and 2M+ downloads.",
+          "pt-BR": "Projetei aplicativos móveis com mais de 10 mil visualizações semanais e mais de 2 milhões de downloads."
+        },
+        {
+          "en": "Led a team of 4 responsible for all company media.",
+          "pt-BR": "Liderei uma equipe de 4 pessoas responsável por toda a mídia da empresa."
+        }
+      ]
+    },
+    {
+      "id": "liq",
+      "visibility": "more",
+      "company": "LIQ",
+      "role": {
+        "en": "Bilingual Tech Support",
+        "pt-BR": "Suporte Técnico Bilíngue"
+      },
+      "start": "2017-03",
+      "end": "2019-11",
+      "image": "career/liq.png",
+      "highlights": [
+        {
+          "en": "Provided bilingual technical support in English and Portuguese.",
+          "pt-BR": "Prestei suporte técnico bilíngue em inglês e português."
+        },
+        {
+          "en": "Resolved issues with operating systems, productivity apps, and hardware using incident management tools.",
+          "pt-BR": "Resolvi problemas de sistemas operacionais, aplicativos de produtividade e hardware usando ferramentas de gestão de incidentes."
+        },
+        {
+          "en": "Delivered user training and how-to documentation.",
+          "pt-BR": "Entreguei treinamentos e documentação de instruções para os usuários."
+        }
+      ]
+    },
+    {
+      "id": "freelance",
+      "visibility": "more",
+      "company": "Freelance",
+      "role": {
+        "en": "Designer & Developer",
+        "pt-BR": "Designer e Desenvolvedor"
+      },
+      "start": "2010",
+      "end": null,
+      "image": "career/freelance.png",
+      "highlights": [
+        {
+          "en": "Freelance design and web development: websites, apps, marketing pieces, illustrations and product design.",
+          "pt-BR": "Design e desenvolvimento web freelancer: sites, aplicativos, peças de marketing, ilustrações e design de produto."
+        }
+      ]
+    }
+  ],
+  "education": [
+    {
+      "id": "anhembi-cs",
+      "visibility": "visible",
+      "kind": "degree",
+      "institution": "Universidade Anhembi Morumbi",
+      "title": {
+        "en": "Bachelor's in Computer Science",
+        "pt-BR": "Bacharelado em Ciência da Computação"
+      },
+      "status": "in-progress",
+      "image": "education/anhembimorumbi.jpg"
+    },
+    {
+      "id": "design-career",
+      "visibility": "more",
+      "kind": "professional",
+      "institution": {
+        "en": "Professional experience",
+        "pt-BR": "Experiência profissional"
+      },
+      "title": {
+        "en": "10 years in graphic design, UX/UI and visual communication",
+        "pt-BR": "10 anos em design gráfico, UX/UI e comunicação visual"
+      },
+      "status": "completed",
+      "image": "education/anhembimorumbi.jpg"
+    },
+    {
+      "id": "udemy",
+      "visibility": "more",
+      "kind": "course",
+      "institution": "Udemy",
+      "title": {
+        "en": "Web development courses",
+        "pt-BR": "Cursos de desenvolvimento web"
+      },
+      "status": "completed",
+      "topics": [
+        "HTML5 / CSS3",
+        "JavaScript",
+        "Node.js",
+        "React"
+      ],
+      "image": "education/udemy.jpg"
+    },
+    {
+      "id": "curso-em-video",
+      "visibility": "more",
+      "kind": "course",
+      "institution": "Curso em Vídeo",
+      "title": {
+        "en": "Web fundamentals",
+        "pt-BR": "Fundamentos da web"
+      },
+      "status": "completed",
+      "topics": [
+        "HTML5 / CSS3",
+        "JavaScript"
+      ],
+      "image": "education/cursoemvideo.png"
+    },
+    {
+      "id": "scrimba",
+      "visibility": "more",
+      "kind": "course",
+      "institution": "Scrimba",
+      "title": {
+        "en": "Clean code",
+        "pt-BR": "Código limpo"
+      },
+      "status": "completed",
+      "topics": [
+        "Clean Code"
+      ],
+      "image": "education/scrimba.png"
+    },
+    {
+      "id": "self-taught",
+      "visibility": "more",
+      "kind": "course",
+      "institution": {
+        "en": "Self-taught",
+        "pt-BR": "Autodidata"
+      },
+      "title": {
+        "en": "Tooling and languages",
+        "pt-BR": "Ferramentas e linguagens"
+      },
+      "status": "completed",
+      "topics": [
+        "TypeScript",
+        "Node.js",
+        "Git",
+        "GitHub"
+      ],
+      "image": "education/selftaught.jpg"
+    }
+  ],
+  "certifications": [
+    {
+      "id": "iterasys-qa",
+      "name": {
+        "en": "Quality Assurance (QA) Certification",
+        "pt-BR": "Certificação em Garantia de Qualidade (QA)"
+      },
+      "issuer": "Iterasys",
+      "year": "2024",
+      "format": {
+        "en": "Online",
+        "pt-BR": "Online"
+      }
+    },
+    {
+      "id": "side-console-titles",
+      "name": {
+        "en": "Console, Platform and Store Title Certification",
+        "pt-BR": "Certificação de Títulos para Consoles, Plataformas e Lojas"
+      },
+      "issuer": "SIDE",
+      "year": "2026",
+      "hours": 112,
+      "format": {
+        "en": "In person",
+        "pt-BR": "Presencial"
+      }
+    }
+  ],
+  "skills": [
+    {
+      "id": "test-automation",
+      "core": true,
+      "name": {
+        "en": "Test Automation",
+        "pt-BR": "Automação de Testes"
+      },
+      "items": [
+        "Playwright",
+        "Cypress",
+        "Selenium"
+      ]
+    },
+    {
+      "id": "api-testing",
+      "core": true,
+      "name": {
+        "en": "API Testing",
+        "pt-BR": "Testes de API"
+      },
+      "items": [
+        "Postman"
+      ]
+    },
+    {
+      "id": "qa-process",
+      "core": true,
+      "name": {
+        "en": "QA Process",
+        "pt-BR": "Processo de QA"
+      },
+      "items": [
+        "Jira",
+        "TestRail",
+        "Confluence",
+        "Agile/Scrum"
+      ]
+    },
+    {
+      "id": "languages",
+      "core": false,
+      "name": {
+        "en": "Languages",
+        "pt-BR": "Linguagens"
+      },
+      "items": [
+        "JavaScript",
+        "TypeScript",
+        "Python",
+        "SQL"
+      ]
+    },
+    {
+      "id": "frameworks",
+      "core": false,
+      "name": {
+        "en": "Frameworks",
+        "pt-BR": "Frameworks"
+      },
+      "items": [
+        "Node.js",
+        "React",
+        "Angular",
+        "WordPress"
+      ]
+    },
+    {
+      "id": "devops-tools",
+      "core": false,
+      "name": {
+        "en": "DevOps & Tools",
+        "pt-BR": "DevOps e Ferramentas"
+      },
+      "items": [
+        "Git/GitHub",
+        "Docker",
+        "MySQL",
+        "PostgreSQL",
+        "SQL Server",
+        "MongoDB",
+        "Windows",
+        "Linux"
+      ]
+    },
+    {
+      "id": "it-ops",
+      "core": false,
+      "name": {
+        "en": "IT Ops",
+        "pt-BR": "Operações de TI"
+      },
+      "items": [
+        "ITIL",
+        "ManageEngine",
+        "Zoho Suite",
+        "Active Directory",
+        "Office 365",
+        "Incident Management",
+        "DevOps"
+      ]
+    },
+    {
+      "id": "design",
+      "core": false,
+      "name": {
+        "en": "Design",
+        "pt-BR": "Design"
+      },
+      "items": [
+        "Figma",
+        "Adobe"
+      ]
+    }
+  ],
+  "spokenLanguages": [
+    {
+      "name": {
+        "en": "Portuguese",
+        "pt-BR": "Português"
+      },
+      "level": {
+        "en": "Native",
+        "pt-BR": "Nativo"
+      }
+    },
+    {
+      "name": {
+        "en": "English",
+        "pt-BR": "Inglês"
+      },
+      "level": {
+        "en": "Fluent (professional proficiency)",
+        "pt-BR": "Fluente (proficiência profissional)"
+      }
+    }
+  ],
+  "devProjects": [
+    {
+      "id": "angular-todo",
+      "name": {
+        "en": "Angular To-Do with Authentication",
+        "pt-BR": "To-Do em Angular com Autenticação"
+      },
+      "description": {
+        "en": "To-do app with authentication using Angular 17 and Firebase.",
+        "pt-BR": "Aplicativo de tarefas com autenticação usando Angular 17 e Firebase."
+      },
+      "tags": [
+        "Angular",
+        "TypeScript",
+        "Firebase",
+        "Tailwind CSS"
+      ],
+      "github": "https://github.com/ygg-m/angular-todo",
+      "live": "https://ygg-todo.web.app/",
+      "image": "projects/angular-todo.png"
+    },
+    {
+      "id": "fg-input-translator",
+      "name": {
+        "en": "Fight Game Input Translator",
+        "pt-BR": "Tradutor de Inputs de Jogos de Luta"
+      },
+      "description": {
+        "en": "App that converts numeral inputs into visual inputs.",
+        "pt-BR": "Aplicativo que converte inputs numéricos em inputs visuais."
+      },
+      "tags": [
+        "React",
+        "JavaScript",
+        "Tailwind CSS",
+        "React Router"
+      ],
+      "github": "https://github.com/ygg-m/fg-input-translator",
+      "live": "https://ygg-m.github.io/fg-input-translator/",
+      "image": "projects/fginputtranslator.png"
+    },
+    {
+      "id": "js-pokedex",
+      "name": {
+        "en": "Pokédex",
+        "pt-BR": "Pokédex"
+      },
+      "description": {
+        "en": "Gets data from PokéAPI to create a dynamic Pokédex.",
+        "pt-BR": "Obtém dados da PokéAPI para criar uma Pokédex dinâmica."
+      },
+      "tags": [
+        "JavaScript",
+        "HTML",
+        "CSS"
+      ],
+      "github": "https://github.com/ygg-m/js-pokedex",
+      "live": "https://ygg-m.github.io/js-pokedex/",
+      "image": "projects/jspokedex.png"
+    },
+    {
+      "id": "to-do-app",
+      "name": {
+        "en": "To-Do App",
+        "pt-BR": "Aplicativo To-Do"
+      },
+      "description": {
+        "en": "Simple to-do app to track your goals.",
+        "pt-BR": "Aplicativo simples de tarefas para acompanhar seus objetivos."
+      },
+      "tags": [
+        "JavaScript",
+        "HTML",
+        "CSS"
+      ],
+      "github": "https://github.com/ygg-m/to-do-app",
+      "live": "https://ygg-m.github.io/to-do-app/",
+      "image": "projects/todo.png"
+    },
+    {
+      "id": "angular-blog",
+      "name": {
+        "en": "Angular Blog",
+        "pt-BR": "Blog em Angular"
+      },
+      "description": {
+        "en": "Practice project built in Angular to learn the framework.",
+        "pt-BR": "Projeto de prática feito em Angular para aprender o framework."
+      },
+      "tags": [
+        "Angular",
+        "TypeScript"
+      ],
+      "github": "https://github.com/ygg-m/angular-blog",
+      "live": "https://ygg-m.github.io/angular-blog/",
+      "image": "projects/angularblog.png"
+    },
+    {
+      "id": "angular-buzzfeed",
+      "name": {
+        "en": "Angular Buzzfeed",
+        "pt-BR": "Buzzfeed em Angular"
+      },
+      "description": {
+        "en": "Practice project built in Angular to learn the framework.",
+        "pt-BR": "Projeto de prática feito em Angular para aprender o framework."
+      },
+      "tags": [
+        "Angular",
+        "TypeScript"
+      ],
+      "github": "https://github.com/ygg-m/angular-buzzfeed",
+      "live": "https://angular-buzzfeed.netlify.app/",
+      "image": "projects/angularbuzzfeed.png"
+    }
+  ],
+  "ui": {
+    "localeToggle": {
+      "en": "Português",
+      "pt-BR": "English"
+    },
+    "localeToggleLabel": {
+      "en": "Switch language to Portuguese",
+      "pt-BR": "Mudar idioma para inglês"
+    },
+    "themeToLight": {
+      "en": "Light",
+      "pt-BR": "Claro"
+    },
+    "themeToLightLabel": {
+      "en": "Switch to light theme",
+      "pt-BR": "Mudar para o tema claro"
+    },
+    "themeToDark": {
+      "en": "Dark",
+      "pt-BR": "Escuro"
+    },
+    "themeToDarkLabel": {
+      "en": "Switch to dark theme",
+      "pt-BR": "Mudar para o tema escuro"
+    },
+    "present": {
+      "en": "Present",
+      "pt-BR": "Atualmente"
+    },
+    "skipToContent": {
+      "en": "Skip to content",
+      "pt-BR": "Pular para o conteúdo"
+    },
+    "navLabel": {
+      "en": "Sections",
+      "pt-BR": "Seções"
+    },
+    "sections": {
+      "about": {
+        "en": "About",
+        "pt-BR": "Sobre"
+      },
+      "skills": {
+        "en": "Skills",
+        "pt-BR": "Habilidades"
+      },
+      "experience": {
+        "en": "Experience",
+        "pt-BR": "Experiência"
+      },
+      "education": {
+        "en": "Education",
+        "pt-BR": "Educação"
+      },
+      "certifications": {
+        "en": "Certifications",
+        "pt-BR": "Certificações"
+      },
+      "contact": {
+        "en": "Contact",
+        "pt-BR": "Contato"
+      },
+      "testing": {
+        "en": "Testing",
+        "pt-BR": "Testes"
+      }
+    },
+    "coreSkills": {
+      "en": "Core skills",
+      "pt-BR": "Habilidades principais"
+    },
+    "supportingSkills": {
+      "en": "Supporting skills",
+      "pt-BR": "Habilidades complementares"
+    },
+    "spokenLanguages": {
+      "en": "Spoken languages",
+      "pt-BR": "Idiomas"
+    },
+    "contactCta": {
+      "en": "Get in touch",
+      "pt-BR": "Entre em contato"
+    },
+    "inProgress": {
+      "en": "In progress",
+      "pt-BR": "Em andamento"
+    },
+    "hours": {
+      "en": "hours",
+      "pt-BR": "horas"
+    },
+    "emailLabel": {
+      "en": "Email",
+      "pt-BR": "E-mail"
+    },
+    "footer": {
+      "en": "Built and tested by Ygor Goulart",
+      "pt-BR": "Criado e testado por Ygor Goulart"
+    },
+    "more": {
+      "en": "More",
+      "pt-BR": "Mais"
+    },
+    "moreExperience": {
+      "en": "More experience",
+      "pt-BR": "Mais experiências"
+    },
+    "moreEducation": {
+      "en": "More education",
+      "pt-BR": "Mais formação"
+    },
+    "devProjects": {
+      "en": "Dev Projects",
+      "pt-BR": "Projetos de Desenvolvimento"
+    },
+    "close": {
+      "en": "Close",
+      "pt-BR": "Fechar"
+    },
+    "github": {
+      "en": "GitHub",
+      "pt-BR": "GitHub"
+    },
+    "liveDemo": {
+      "en": "Live demo",
+      "pt-BR": "Demonstração"
+    },
+    "downloadCv": {
+      "en": "Download CV",
+      "pt-BR": "Baixar CV"
+    }
+  },
+  "pdfOnly": {
+    "phone": "+55 (11) 95283-1030"
+  },
+  "testing": {
+    "title": {
+      "en": "How this site is tested",
+      "pt-BR": "Como este site é testado"
+    },
+    "intro": {
+      "en": "This CV is also my test subject. Every change runs through the checks below, and the site is deployed only when all of them pass.",
+      "pt-BR": "Este currículo também é meu objeto de teste. Toda alteração passa pelas verificações abaixo, e o site só é publicado quando todas passam."
+    },
+    "layers": [
+      {
+        "id": "functional",
+        "name": {
+          "en": "Functional end-to-end",
+          "pt-BR": "Funcional ponta a ponta"
+        },
+        "tool": "Playwright · Chromium, Firefox, WebKit",
+        "description": {
+          "en": "Language and theme switching, sections, modals, downloads and persistence.",
+          "pt-BR": "Troca de idioma e tema, seções, modais, downloads e persistência."
+        }
+      },
+      {
+        "id": "accessibility",
+        "name": {
+          "en": "Accessibility",
+          "pt-BR": "Acessibilidade"
+        },
+        "tool": "axe-core · WCAG 2.1 AA",
+        "description": {
+          "en": "Every theme and language combination, with and without open modals, plus keyboard and focus checks.",
+          "pt-BR": "Todas as combinações de tema e idioma, com e sem modais abertos, além de verificações de teclado e foco."
+        }
+      },
+      {
+        "id": "visual",
+        "name": {
+          "en": "Visual regression",
+          "pt-BR": "Regressão visual"
+        },
+        "tool": "Playwright screenshots · Docker",
+        "description": {
+          "en": "Baselines across theme, language, screen size and modals, compared in a fixed container.",
+          "pt-BR": "Referências por tema, idioma, tamanho de tela e modais, comparadas em um contêiner fixo."
+        }
+      },
+      {
+        "id": "unit",
+        "name": {
+          "en": "Unit and content validation",
+          "pt-BR": "Unidade e validação de conteúdo"
+        },
+        "tool": "Vitest · JSON Schema",
+        "description": {
+          "en": "Content schema, missing translations, color contrast, language and theme rules, PDF layout.",
+          "pt-BR": "Esquema do conteúdo, traduções ausentes, contraste de cores, regras de idioma e tema, layout do PDF."
+        }
+      },
+      {
+        "id": "performance",
+        "name": {
+          "en": "Performance and SEO",
+          "pt-BR": "Desempenho e SEO"
+        },
+        "tool": "Lighthouse CI · nightly",
+        "description": {
+          "en": "Budgets for performance, accessibility, best practices and SEO.",
+          "pt-BR": "Metas de desempenho, acessibilidade, boas práticas e SEO."
+        }
+      },
+      {
+        "id": "links",
+        "name": {
+          "en": "Link checking",
+          "pt-BR": "Verificação de links"
+        },
+        "tool": "Link checker · nightly",
+        "description": {
+          "en": "Every link on the published site is requested every night.",
+          "pt-BR": "Todos os links do site publicado são verificados toda noite."
+        }
+      },
+      {
+        "id": "gate",
+        "name": {
+          "en": "Quality gate",
+          "pt-BR": "Portão de qualidade"
+        },
+        "tool": "GitHub Actions",
+        "description": {
+          "en": "The site is deployed only when every check above passes.",
+          "pt-BR": "O site só é publicado quando todas as verificações acima passam."
+        }
+      }
+    ],
+    "links": {
+      "report": {
+        "en": "Playwright report",
+        "pt-BR": "Relatório do Playwright"
+      },
+      "plan": {
+        "en": "Test plan",
+        "pt-BR": "Plano de testes"
+      },
+      "source": {
+        "en": "Source code",
+        "pt-BR": "Código-fonte"
+      },
+      "bugs": {
+        "en": "Bug reports",
+        "pt-BR": "Relatos de bugs"
+      },
+      "runs": {
+        "en": "CI runs",
+        "pt-BR": "Execuções de CI"
+      }
+    },
+    "badgeAlt": {
+      "en": "CI status",
+      "pt-BR": "Status do CI"
+    }
+  }
+}
